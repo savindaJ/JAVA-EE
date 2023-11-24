@@ -1,4 +1,4 @@
-package lk.ijse.helloEE;
+package lk.ijse.hello.api;
 
 public class HelloServlet {
 }
