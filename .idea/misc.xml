@@ -9,12 +9,16 @@
         <option value="$PROJECT_DIR$/webApp_02/pom.xml" />
         <option value="$PROJECT_DIR$/untitled/pom.xml" />
         <option value="$PROJECT_DIR$/Test/pom.xml" />
+        <option value="$PROJECT_DIR$/test/pom.xml" />
+        <option value="$PROJECT_DIR$/Web-App-02/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Test/pom.xml" />
+        <option value="$PROJECT_DIR$/Web-App-02/pom.xml" />
         <option value="$PROJECT_DIR$/WebApp_2/pom.xml" />
+        <option value="$PROJECT_DIR$/test/pom.xml" />
         <option value="$PROJECT_DIR$/untitled/pom.xml" />
         <option value="$PROJECT_DIR$/webApp_02/pom.xml" />
       </set>

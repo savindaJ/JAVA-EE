@@ -10,8 +10,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Test" target="1.5" />
+      <module name="test" target="1.5" />
+      <module name="Test" target="11" />
       <module name="untitled" target="11" />
+      <module name="Web-App-02" target="11" />
       <module name="webApp_02" target="1.5" />
       <module name="WebApp_2" target="1.5" />
     </bytecodeTargetLevel>
