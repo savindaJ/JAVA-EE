@@ -10,11 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Hello_EE_Web_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hello-EE-MVN/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Hello_EE_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Hello_EE_Web_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hello-EE/src/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hello-EE/src/Sample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hello-EE/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/02-Hello-EE/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hello-EE/Hello-EE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/02-Hello-EE/02-Hello-EE.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hello-EE/src/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/02-Hello-EE/src/Sample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hello-EE/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02-Hello-EE/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Hello_EE_Web_exploded/Hello-EE_Web exploded.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Hello_EE_Web_exploded/Hello-EE_Web exploded.war" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +38,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectId" id="2Yn9z9Yx3oSnfcb1A0GAmmd1KC1" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -50,13 +60,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "G:/WorkZone/JAVA-EE/01-POS-FrontEnd",
+    "last_opened_file_path": "G:/WorkZone/JAVA-EE/Hello-EE-MVN/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2505747",
     "vue.rearranger.settings.migration": "true"
@@ -72,7 +82,7 @@
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="Hello-EE:Web exploded">
+        <artifact name="03-Hello-EE-MVN:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/app" />
           </settings>
@@ -153,7 +163,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="Hello-EE:Web exploded" />
+          <artifact name="03-Hello-EE-MVN:war exploded" />
         </option>
       </method>
     </configuration>
@@ -166,7 +176,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701150735882</updated>
-      <workItem from="1701150736959" duration="1197000" />
+      <workItem from="1701150736959" duration="1704000" />
     </task>
     <servers />
   </component>
