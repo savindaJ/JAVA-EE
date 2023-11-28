@@ -10,6 +10,6 @@
 
     <servlet>
         <servlet-name>Sample</servlet-name>
-<!--        <servlet-class>java.awt.image.SampleModel</servlet-class>-->
+        <servlet-class>lk.ijse.webApp2.SampleServlet</servlet-class>
     </servlet>
 </web-app>
