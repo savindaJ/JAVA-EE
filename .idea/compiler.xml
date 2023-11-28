@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="WebApp-02" />
-        <module name="Hello-java-EE" />
+        <module name="03-Hello-java-EE" />
+        <module name="04-WebApp-02" />
+        <module name="05-WebApp-05" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="05-WebApp03" target="11" />
       <module name="test" target="1.5" />
       <module name="Test" target="11" />
       <module name="untitled" target="11" />
