@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Hello-EE:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Hello_EE_Web_exploded</output-path>
+    <root id="archive" name="Hello-EE_Web exploded.war">
+      <element id="javaee-facet-resources" facet="Hello-EE/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Hello-EE" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
