@@ -13,4 +13,16 @@
         <servlet-name>AppTwo</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+
+<!--    servlet 1//////////////////////////////////////////////-->
+
+    <servlet>
+        <servlet-name>AppOne</servlet-name>
+        <servlet-class>lk.ijse.webap2.AppOne</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AppOne</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
 </web-app>
