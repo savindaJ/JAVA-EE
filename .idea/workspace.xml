@@ -10,14 +10,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Hello-EE-MVN/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Hello_EE_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Hello_EE_Web_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hello-EE/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/02-Hello-EE/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hello-EE/Hello-EE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/02-Hello-EE/02-Hello-EE.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hello-EE/src/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/02-Hello-EE/src/Sample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hello-EE/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02-Hello-EE/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Hello_EE_Web_exploded/Hello-EE_Web exploded.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Hello_EE_Web_exploded/Hello-EE_Web exploded.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-Hello-EE/02-Hello-EE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/02-Hello-EE/02-Hello-EE.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Hello-EE-MVN/src/main/java/lk/ijse/hello/api/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/03-Hello-EE-MVN/src/main/java/lk/ijse/hello/api/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_04-Web-app-02/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/java/lk/ijse/webApp4/WebAppServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/image/cart-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/js/code.jquery.com_jquery-3.7.1.min.js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/assets/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-WebApp/src/main/webapp/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +96,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2Yn9z9Yx3oSnfcb1A0GAmmd1KC1" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -60,7 +114,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "G:/WorkZone/JAVA-EE/Hello-EE-MVN/src/main/webapp",
+    "last_opened_file_path": "G:/WorkZone/JAVA-EE/_04-Web-app-02/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,6 +123,7 @@
     "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2505747",
+    "settings.editor.selected.configurable": "preferences.applicationServers",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -79,18 +134,18 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 8.5.96" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.96" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="03-Hello-EE-MVN:war exploded">
+        <artifact name="Hello-EE:Web exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/app" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="2086a51b-a235-42c6-967a-a8bbfb4ef8a9" />
-        <option name="HTTP_PORT" value="8082" />
+        <option name="BASE_DIRECTORY_NAME" value="d5f7df21-0c1a-411d-ad5f-d7f08c3365bd" />
+        <option name="HTTP_PORT" value="8081" />
+        <option name="JNDI_PORT" value="1066" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -98,7 +153,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="3293" />
+        <option name="DEBUG_PORT" value="1424" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -163,7 +218,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="03-Hello-EE-MVN:war exploded" />
+          <artifact name="Hello-EE:Web exploded" />
         </option>
       </method>
     </configuration>
@@ -177,6 +232,8 @@
       <option name="presentableId" value="Default" />
       <updated>1701150735882</updated>
       <workItem from="1701150736959" duration="1704000" />
+      <workItem from="1701399419257" duration="532000" />
+      <workItem from="1701401105718" duration="1109000" />
     </task>
     <servers />
   </component>

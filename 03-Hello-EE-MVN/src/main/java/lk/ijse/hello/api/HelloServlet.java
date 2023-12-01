@@ -10,6 +10,6 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("<h1>Hello JAVA EE / MVN !");
+        resp.getWriter().println("<h1>Hello JAVA EE 2 !");
     }
 }
