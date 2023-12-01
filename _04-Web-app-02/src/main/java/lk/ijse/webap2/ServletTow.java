@@ -11,9 +11,10 @@ import java.io.IOException;
  * @date : 12/1/2023
  * @since : 0.1.0
  **/
-public class AppOne extends HttpServlet {
+public class ServletTow extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("<h1>Servlet 2 !</h1>");
+        resp.getWriter().write("<h1>Servlet 1 !</h1>");
+        System.out.println("Hello ee 2 !");
     }
 }

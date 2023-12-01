@@ -6,7 +6,7 @@
     <servlet>
         <servlet-name>AppTwo</servlet-name>
 <!--        add full codified class name in hear !-->
-        <servlet-class>lk.ijse.webap2.AppTwo</servlet-class>
+        <servlet-class>lk.ijse.webap2.ServletTow</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -18,7 +18,7 @@
 
     <servlet>
         <servlet-name>AppOne</servlet-name>
-        <servlet-class>lk.ijse.webap2.AppOne</servlet-class>
+        <servlet-class>lk.ijse.webap2.ServletOne</servlet-class>
     </servlet>
 
     <servlet-mapping>
