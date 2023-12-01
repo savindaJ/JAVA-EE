@@ -16,6 +16,9 @@ import java.io.IOException;
 public class ServletTwo extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        //        get context parameter value !
+
         ServletContext servletContext = getServletContext();
         String password = servletContext.getInitParameter("password");
         System.out.println(password);

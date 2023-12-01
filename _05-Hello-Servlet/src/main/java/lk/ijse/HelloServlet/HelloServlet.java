@@ -28,6 +28,9 @@ public class HelloServlet extends HttpServlet {
         System.out.println(config.getInitParameter("user"));
         System.out.println(config.getInitParameter("URL"));
 
+
+//        get context parameter value !
+
         ServletContext servletContext = getServletContext();
         String password = servletContext.getInitParameter("password");
         System.out.println(password);
