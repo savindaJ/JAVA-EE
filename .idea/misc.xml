@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/Hello-EE-MVN/pom.xml" />
         <option value="$PROJECT_DIR$/_04-Web-app-02/pom.xml" />
+        <option value="$PROJECT_DIR$/_05-Hello-Servlet/pom.xml" />
       </list>
     </option>
   </component>

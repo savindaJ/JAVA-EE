@@ -10,10 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04-Web-app-02/src/main/java/lk/ijse/webap2/ServletOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/_04-Web-app-02/src/main/java/lk/ijse/webap2/ServletOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04-Web-app-02/src/main/java/lk/ijse/webap2/ServletTow.java" beforeDir="false" afterPath="$PROJECT_DIR$/_04-Web-app-02/src/main/java/lk/ijse/webap2/ServletTow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04-Web-app-02/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_04-Web-app-02/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_05-Hello-Servlet/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05-Hello-Servlet/src/main/java/lk/ijse/HelloServlet/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/_05-Hello-Servlet/src/main/java/lk/ijse/HelloServlet/HelloServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,13 +57,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "G:/WorkZone/JAVA-EE/03-Hello-EE-MVN",
+    "last_opened_file_path": "G:/WorkZone/JAVA-EE/_05-Hello-Servlet/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2505747",
     "settings.editor.selected.configurable": "preferences.applicationServers",
@@ -81,7 +79,7 @@
     <configuration name="Tomcat 8.5.96" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.96" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="_04-Web-app-02:war exploded">
+        <artifact name="_05-Hello-Servlet:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/app" />
           </settings>
@@ -163,7 +161,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="_04-Web-app-02:war exploded" />
+          <artifact name="_05-Hello-Servlet:war exploded" />
         </option>
       </method>
     </configuration>
@@ -178,7 +176,7 @@
       <updated>1701150735882</updated>
       <workItem from="1701150736959" duration="1704000" />
       <workItem from="1701399419257" duration="532000" />
-      <workItem from="1701401105718" duration="11728000" />
+      <workItem from="1701401105718" duration="12321000" />
     </task>
     <servers />
   </component>
