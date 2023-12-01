@@ -34,6 +34,7 @@ public class HelloServlet extends HttpServlet {
         ServletContext servletContext = getServletContext();
         String password = servletContext.getInitParameter("password");
         System.out.println(password);
+        resp.getWriter().println(password);
     }
 
     @Override

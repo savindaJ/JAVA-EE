@@ -18,16 +18,6 @@
             <param-name>city</param-name>
             <param-value>Matara</param-value>
         </init-param>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>HelloServlet</servlet-name>
-        <url-pattern>/test</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>ServletTwo</servlet-name>
-        <servlet-class>lk.ijse.HelloServlet.ServletTwo</servlet-class>
 
         <init-param>
             <param-name>user</param-name>
@@ -43,6 +33,16 @@
             <param-name>URL</param-name>
             <param-value>mysql:jdbc://localhost:3306/thogakade</param-value>
         </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletTwo</servlet-name>
+        <servlet-class>lk.ijse.HelloServlet.ServletTwo</servlet-class>
     </servlet>
 
     <servlet-mapping>
