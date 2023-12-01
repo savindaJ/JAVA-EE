@@ -1,6 +1,7 @@
 package lk.ijse.HelloServlet;
 
 import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -23,6 +24,13 @@ public class HelloServlet extends HttpServlet {
 //        this value stored in web.xml file !
         String city = config.getInitParameter("city");
         System.out.println(city);
+        System.out.println(config.getInitParameter("password"));
+        System.out.println(config.getInitParameter("user"));
+        System.out.println(config.getInitParameter("URL"));
+
+        ServletContext servletContext = getServletContext();
+        String password = servletContext.getInitParameter("password");
+        System.out.println(password);
     }
 
     @Override

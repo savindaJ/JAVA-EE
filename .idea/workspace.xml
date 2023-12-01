@@ -67,6 +67,7 @@
     "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2505747",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.applicationServers",
     "vue.rearranger.settings.migration": "true"
   }
@@ -177,7 +178,7 @@
       <updated>1701150735882</updated>
       <workItem from="1701150736959" duration="1704000" />
       <workItem from="1701399419257" duration="532000" />
-      <workItem from="1701401105718" duration="17675000" />
+      <workItem from="1701401105718" duration="18396000" />
     </task>
     <servers />
   </component>
