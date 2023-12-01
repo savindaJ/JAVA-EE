@@ -10,8 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04-Web-app-02/src/main/java/lk/ijse/webap2/AppTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/_04-Web-app-02/src/main/java/lk/ijse/webap2/AppTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04-Web-app-02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_04-Web-app-02/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2505747",
     "settings.editor.selected.configurable": "preferences.applicationServers",
@@ -176,7 +175,7 @@
       <updated>1701150735882</updated>
       <workItem from="1701150736959" duration="1704000" />
       <workItem from="1701399419257" duration="532000" />
-      <workItem from="1701401105718" duration="2653000" />
+      <workItem from="1701401105718" duration="4744000" />
     </task>
     <servers />
   </component>
