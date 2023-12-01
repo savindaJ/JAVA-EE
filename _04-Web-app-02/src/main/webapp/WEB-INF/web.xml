@@ -5,6 +5,7 @@
          version="4.0">
     <servlet>
         <servlet-name>AppTwo</servlet-name>
+<!--        add full codified class name in hear !-->
         <servlet-class>lk.ijse.webap2.AppTwo</servlet-class>
     </servlet>
 
