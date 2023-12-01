@@ -10,7 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_05-Hello-Servlet/src/main/java/lk/ijse/HelloServlet/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/_05-Hello-Servlet/src/main/java/lk/ijse/HelloServlet/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05-Hello-Servlet/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_05-Hello-Servlet/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +177,7 @@
       <updated>1701150735882</updated>
       <workItem from="1701150736959" duration="1704000" />
       <workItem from="1701399419257" duration="532000" />
-      <workItem from="1701401105718" duration="12686000" />
+      <workItem from="1701401105718" duration="17675000" />
     </task>
     <servers />
   </component>

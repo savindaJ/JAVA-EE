@@ -6,6 +6,26 @@
     <servlet>
         <servlet-name>HelloServlet</servlet-name>
         <servlet-class>lk.ijse.HelloServlet.HelloServlet</servlet-class>
+<!--        add servlet config obj value and name-->
+        <init-param>
+            <param-name>city</param-name>
+            <param-value>Matara</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>user</param-name>
+            <param-value>root</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>80221474</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>URL</param-name>
+            <param-value>mysql:jdbc://localhost:3306/thogakade</param-value>
+        </init-param>
     </servlet>
 
     <servlet-mapping>
