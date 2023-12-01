@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="_04-Web-app-02:war exploded" />
+      <artifact name="_05-Hello-Servlet:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/_05-Hello-Servlet/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_05-Hello-Servlet/src/main/java/lk/ijse/HelloServlet/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/_05-Hello-Servlet/src/main/java/lk/ijse/HelloServlet/HelloServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +175,7 @@
       <updated>1701150735882</updated>
       <workItem from="1701150736959" duration="1704000" />
       <workItem from="1701399419257" duration="532000" />
-      <workItem from="1701401105718" duration="12321000" />
+      <workItem from="1701401105718" duration="12686000" />
     </task>
     <servers />
   </component>
