@@ -50,4 +50,14 @@
         <url-pattern>/two</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>TherdServlet</servlet-name>
+        <servlet-class>lk.ijse.HelloServlet.ThreadServe</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TherdServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
 </web-app>
