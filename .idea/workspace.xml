@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05-Hello-Servlet/src/main/java/lk/ijse/HelloServlet/TheardServle.java" beforeDir="false" afterPath="$PROJECT_DIR$/_05-Hello-Servlet/src/main/java/lk/ijse/HelloServlet/TheardServle.java" afterDir="false" />
-    </list>
+    <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,6 +187,7 @@
       <workItem from="1701599371575" duration="240000" />
       <workItem from="1701599618006" duration="4975000" />
       <workItem from="1701606269119" duration="134000" />
+      <workItem from="1701606764928" duration="298000" />
     </task>
     <servers />
   </component>
