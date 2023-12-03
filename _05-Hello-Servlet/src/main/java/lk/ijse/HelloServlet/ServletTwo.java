@@ -23,5 +23,6 @@ public class ServletTwo extends HttpServlet {
         String password = servletContext.getInitParameter("password");
         System.out.println(password);
         resp.getWriter().println(password);
+//        add sample commit !
     }
 }
