@@ -76,7 +76,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2505747",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.sync",
+    "settings.editor.selected.configurable": "preferences.general",
     "settings.editor.splitter.proportion": "0.27393076",
     "vue.rearranger.settings.migration": "true"
   }
@@ -193,7 +193,9 @@
       <workItem from="1701610556861" duration="166000" />
       <workItem from="1701612761472" duration="1042000" />
       <workItem from="1701616661544" duration="83000" />
-      <workItem from="1701616770608" duration="1114000" />
+      <workItem from="1701616770608" duration="1520000" />
+      <workItem from="1701659866757" duration="121000" />
+      <workItem from="1701663899034" duration="2620000" />
     </task>
     <servers />
   </component>
