@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05-Hello-Servlet/src/main/java/lk/ijse/HelloServlet/ThreadServe.java" beforeDir="false" afterPath="$PROJECT_DIR$/_05-Hello-Servlet/src/main/java/lk/ijse/HelloServlet/ThreadServe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +88,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.83" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.83" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="_05-Hello-Servlet:war exploded">
@@ -198,7 +198,7 @@
       <workItem from="1701659866757" duration="121000" />
       <workItem from="1701663899034" duration="6299000" />
       <workItem from="1701767603845" duration="58000" />
-      <workItem from="1701837985412" duration="1259000" />
+      <workItem from="1701837985412" duration="2075000" />
     </task>
     <servers />
   </component>
