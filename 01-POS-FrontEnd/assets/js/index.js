@@ -255,3 +255,7 @@ $(`#tblCustomer tr`).click(function () {
 });
 
 getAll();*/
+
+$('#save-customer').on('click',function () {
+    console.log('add sample details !');
+});
