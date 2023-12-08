@@ -10,6 +10,11 @@
         <param-value>this is password !</param-value>
     </context-param>
 
+    <context-param>
+        <param-name>name</param-name>
+        <param-value>Savinda !</param-value>
+    </context-param>
+
     <servlet>
         <servlet-name>HelloServlet</servlet-name>
         <servlet-class>lk.ijse.HelloServlet.HelloServlet</servlet-class>

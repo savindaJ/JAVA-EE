@@ -20,6 +20,8 @@ public class ServletTwo extends HttpServlet {
         //        get context parameter value !
 
         ServletContext servletContext = getServletContext();
+        String name = servletContext.getInitParameter("name");
+        System.out.println(name);
         String password = servletContext.getInitParameter("password");
         System.out.println(password);
         resp.getWriter().println(password);
