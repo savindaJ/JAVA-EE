@@ -7,7 +7,7 @@
 <!--    add context configuration !-->
     <context-param>
         <param-name>password</param-name>
-        <param-value>1234</param-value>
+        <param-value>this is password !</param-value>
     </context-param>
 
     <servlet>
