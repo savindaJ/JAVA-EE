@@ -12,8 +12,13 @@ import java.io.IOException;
  * @date : 12/1/2023
  * @since : 0.1.0
  **/
-@WebServlet(name = "MyServlet" , urlPatterns = "/test")
+@WebServlet(name = "MyServlet" , urlPatterns = "/test" , loadOnStartup = 1)
 public class MyServlet extends HttpServlet {
+
+    @Override
+    public void init() throws ServletException {
+        System.out.println("init() !");
+    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
