@@ -10,12 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05-Hello-Servlet/src/main/java/lk/ijse/HelloServlet/ThreadServe.java" beforeDir="false" afterPath="$PROJECT_DIR$/_05-Hello-Servlet/src/main/java/lk/ijse/HelloServlet/ThreadServe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/src/main/java/lk/ijse/lifeCycle/MyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/src/main/java/lk/ijse/lifeCycle/MyServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/target/_06-Servlet-Life-Cycle-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/lifeCycle/MyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/target/_06-Servlet-Life-Cycle-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/lifeCycle/MyServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/target/classes/lk/ijse/lifeCycle/MyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/target/classes/lk/ijse/lifeCycle/MyServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,11 +91,12 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.83" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.83" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="_06-Servlet-Life-Cycle:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/app_06" />
+            <option name="CONTEXT_PATH" value="/app" />
           </settings>
         </artifact>
       </deployment>
@@ -204,7 +203,7 @@
       <workItem from="1701767603845" duration="58000" />
       <workItem from="1701837985412" duration="3239000" />
       <workItem from="1701952763885" duration="3890000" />
-      <workItem from="1702004827038" duration="3923000" />
+      <workItem from="1702004827038" duration="4559000" />
     </task>
     <servers />
   </component>
