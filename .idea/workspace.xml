@@ -11,9 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/src/main/java/lk/ijse/lifeCycle/MyServletTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/src/main/java/lk/ijse/lifeCycle/MyServletTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/target/_06-Servlet-Life-Cycle-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/lifeCycle/MyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/target/_06-Servlet-Life-Cycle-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/lifeCycle/MyServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/target/classes/lk/ijse/lifeCycle/MyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/target/classes/lk/ijse/lifeCycle/MyServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/target/_06-Servlet-Life-Cycle-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_06-Servlet-Life-Cycle/target/_06-Servlet-Life-Cycle-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +203,7 @@
       <workItem from="1701767603845" duration="58000" />
       <workItem from="1701837985412" duration="3239000" />
       <workItem from="1701952763885" duration="3890000" />
-      <workItem from="1702004827038" duration="5610000" />
+      <workItem from="1702004827038" duration="6869000" />
     </task>
     <servers />
   </component>

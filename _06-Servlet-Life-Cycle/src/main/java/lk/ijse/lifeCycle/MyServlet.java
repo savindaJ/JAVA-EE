@@ -15,7 +15,7 @@ import java.io.IOException;
 public class MyServlet extends HttpServlet {
 
     {
-        System.out.println("invoke instance block !");
+        System.out.println("invoke instance block ! ////////////////////////////////");
     }
 
     static {

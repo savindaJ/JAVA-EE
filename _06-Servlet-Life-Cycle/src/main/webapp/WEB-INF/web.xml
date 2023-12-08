@@ -6,7 +6,7 @@
     <servlet>
         <servlet-name>MyServlet</servlet-name>
         <servlet-class>lk.ijse.lifeCycle.MyServlet</servlet-class>
-<!--        add negative values-->
+<!--        add negative or zero values-->
 <!--        not loaded deploy time-->
 <!--        <load-on-startup>-1</load-on-startup>-->
 
@@ -18,5 +18,18 @@
     <servlet-mapping>
         <servlet-name>MyServlet</servlet-name>
         <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MyServletTwo</servlet-name>
+        <servlet-class>lk.ijse.lifeCycle.MyServletTwo</servlet-class>
+<!--        first servlet loaded after load MyServletTow class-->
+<!--        by using startUp values !-->
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyServletTwo</servlet-name>
+        <url-pattern>/two</url-pattern>
     </servlet-mapping>
 </web-app>
