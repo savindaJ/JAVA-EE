@@ -10,6 +10,7 @@
         <module name="_07-Servlet-Annotation" />
         <module name="_06-Servlet-Life-Cycle" />
         <module name="_04-Web-app-02" />
+        <module name="_08-web-app-03" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
