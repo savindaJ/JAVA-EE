@@ -25,4 +25,9 @@ public class ThreadServe extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.print("post !");
     }
+
+    @Override
+    public void destroy() {
+        System.out.println("destroy !!!!!");
+    }
 }

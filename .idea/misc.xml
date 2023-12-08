@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
@@ -6,6 +7,7 @@
         <option value="$PROJECT_DIR$/Hello-EE-MVN/pom.xml" />
         <option value="$PROJECT_DIR$/_04-Web-app-02/pom.xml" />
         <option value="$PROJECT_DIR$/_05-Hello-Servlet/pom.xml" />
+        <option value="$PROJECT_DIR$/_06-Servlet-Life-Cycle/pom.xml" />
       </list>
     </option>
   </component>
