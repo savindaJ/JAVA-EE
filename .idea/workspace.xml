@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_08-web-app-03/src/main/java/lk/ijse/webapp03/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08-web-app-03/src/main/java/lk/ijse/webapp03/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_08-web-app-03/target/_08-web-app-03-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/webapp03/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/_08-web-app-03/target/_08-web-app-03-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/webapp03/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_08-web-app-03/target/classes/lk/ijse/webapp03/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/_08-web-app-03/target/classes/lk/ijse/webapp03/Test.class" afterDir="false" />
-    </list>
+    <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -208,7 +203,7 @@
       <workItem from="1701767603845" duration="58000" />
       <workItem from="1701837985412" duration="3239000" />
       <workItem from="1701952763885" duration="3890000" />
-      <workItem from="1702004827038" duration="13710000" />
+      <workItem from="1702004827038" duration="14217000" />
     </task>
     <servers />
   </component>
