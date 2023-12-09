@@ -10,64 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a339040c-498c-4101-bee9-6c8dba4fdc9a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a339040c-498c-4101-bee9-6c8dba4fdc9a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d4c3c077-dc9f-4c48-a6dd-f268175e6a1c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d4c3c077-dc9f-4c48-a6dd-f268175e6a1c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d4c3c077-dc9f-4c48-a6dd-f268175e6a1c/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d4c3c077-dc9f-4c48-a6dd-f268175e6a1c/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d4c3c077-dc9f-4c48-a6dd-f268175e6a1c/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d4c3c077-dc9f-4c48-a6dd-f268175e6a1c/storage_v2/_src_/schema/thogakade.bGScBw.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/_09-Ajax-Test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-grid.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-reboot.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-utilities.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-utilities.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-utilities.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-utilities.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-utilities.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/bootstrap.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/image/cart-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/js/code.jquery.com_jquery-3.7.1.min.js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/assets/js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-POS-FrontEnd/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +90,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/01-POS-FrontEnd" />
       <recent name="G:\WorkZone\JAVA-EE\01-POS-FrontEnd" />
     </key>
   </component>
@@ -263,7 +209,7 @@
       <workItem from="1701837985412" duration="3239000" />
       <workItem from="1701952763885" duration="3890000" />
       <workItem from="1702004827038" duration="17164000" />
-      <workItem from="1702092894809" duration="3187000" />
+      <workItem from="1702092894809" duration="3516000" />
     </task>
     <servers />
   </component>
