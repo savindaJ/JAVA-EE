@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="_08-web-app-03:war exploded" />
+      <artifact name="_09-Ajax-Test:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,9 +10,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/_09-Ajax-Test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_09-Ajax-Test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/image/cart-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/js/code.jquery.com_jquery-3.7.1.min.js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/assets/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/controllers/CustomerController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/controllers/DashboardController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/controllers/ItemController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/controllers/PurchaseOrderController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/controllers/orderDetailController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/db/db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/models/Customer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/models/Item.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/models/Order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/models/OrderDetails.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/util/validation/CustomerValidations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/util/validation/ItemValidations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp/util/validation/OrderValidations.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,13 +130,13 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/Users/savindajayasekara/WorkZone/Projects/JAVA-EE/01-POS-FrontEnd",
+    "last_opened_file_path": "/Users/savindajayasekara/WorkZone/Projects/JAVA-EE/_09-Ajax-Test/src/main/java/lib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Facets",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2505747",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -90,16 +152,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_09-Ajax-Test/src/main/java/lib" />
+      <recent name="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp" />
       <recent name="$PROJECT_DIR$/01-POS-FrontEnd" />
       <recent name="G:\WorkZone\JAVA-EE\01-POS-FrontEnd" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.83" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.83" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="_08-web-app-03:war exploded">
+        <artifact name="_09-Ajax-Test:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/app" />
           </settings>
@@ -179,7 +242,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="_08-web-app-03:war exploded" />
+          <artifact name="_09-Ajax-Test:war exploded" />
         </option>
       </method>
     </configuration>
@@ -209,7 +272,7 @@
       <workItem from="1701837985412" duration="3239000" />
       <workItem from="1701952763885" duration="3890000" />
       <workItem from="1702004827038" duration="17164000" />
-      <workItem from="1702092894809" duration="3516000" />
+      <workItem from="1702092894809" duration="6862000" />
     </task>
     <servers />
   </component>
