@@ -22,15 +22,11 @@ public class CustomerServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("get all customer !");
-
             JsonObjectBuilder obj = Json.createObjectBuilder();
-
             obj.add("state", "OK");
             obj.add("message", "Successfully Loaded..!");
             obj.add("data", "");
             resp.setStatus(200);
-
             resp.getWriter().print(obj.build());
-
     }
 }
