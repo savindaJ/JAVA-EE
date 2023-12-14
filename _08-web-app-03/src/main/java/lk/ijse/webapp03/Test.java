@@ -18,10 +18,10 @@ import java.sql.SQLException;
  * @date : 12/1/2023
  * @since : 0.1.0
  **/
-@WebServlet(name = "Test",urlPatterns = "/test" , loadOnStartup = 1 , initParams = {
-        @WebInitParam(name = "user",value = "root"),
-        @WebInitParam(name = "password",value = "80221474"),
-        @WebInitParam(name = "URL",value = "jdbc:mysql://localhost:3306/web_test")
+@WebServlet(name = "Test", urlPatterns = "/test", loadOnStartup = 1, initParams = {
+        @WebInitParam(name = "user", value = "root"),
+        @WebInitParam(name = "password", value = "80221474"),
+        @WebInitParam(name = "URL", value = "jdbc:mysql://localhost:3306/web_test")
 })
 public class Test extends HttpServlet {
 
@@ -50,28 +50,28 @@ public class Test extends HttpServlet {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection(URL,user,password);
+            connection = DriverManager.getConnection(URL, user, password);
 
             String cusId = req.getParameter("cusId");
             String name = req.getParameter("name");
             String address = req.getParameter("address");
             String salary = req.getParameter("salary");
 
-            System.out.println(cusId+name+address+salary);
+            System.out.println(cusId + name + address + salary);
 
             PreparedStatement pstm = connection.prepareStatement("insert into customer values(?,?,?,?)");
-            pstm.setString(1,cusId);
-            pstm.setString(2,name);
-            pstm.setString(3,address);
+            pstm.setString(1, cusId);
+            pstm.setString(2, name);
+            pstm.setString(3, address);
             pstm.setDouble(4, Double.parseDouble(salary));
 
             int execute = pstm.executeUpdate();
 
-            if (execute>0){
+            if (execute > 0) {
                 System.out.println("saved()!");
                 resp.getWriter().println("<h1>saved !</h1>");
                 connection.close();
-            }else {
+            } else {
                 System.out.println("not saved()!");
             }
         } catch (ClassNotFoundException | SQLException e) {
@@ -91,20 +91,20 @@ public class Test extends HttpServlet {
         PreparedStatement pstm = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection(URL,user,password);
+            connection = DriverManager.getConnection(URL, user, password);
             pstm = connection.prepareStatement("update customer set name=?,address=?,salary=? where cus_id=?");
-            pstm.setString(1,name);
-            pstm.setString(2,address);
+            pstm.setString(1, name);
+            pstm.setString(2, address);
             pstm.setDouble(3, Double.parseDouble(salary));
             pstm.setString(4, cusId);
 
             int execute = pstm.executeUpdate();
 
-            if (execute>0){
+            if (execute > 0) {
                 System.out.println("updated !");
                 resp.getWriter().println("<h1>updated !</h1>");
                 connection.close();
-            }else {
+            } else {
                 System.out.println("not update !");
             }
         } catch (SQLException | ClassNotFoundException e) {
@@ -119,17 +119,17 @@ public class Test extends HttpServlet {
         PreparedStatement pstm = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection(URL,user,password);
+            connection = DriverManager.getConnection(URL, user, password);
             pstm = connection.prepareStatement("delete from customer where cus_id=?");
-            pstm.setString(1,cusId);
+            pstm.setString(1, cusId);
 
             int execute = pstm.executeUpdate();
 
-            if (execute>0){
+            if (execute > 0) {
                 System.out.println("deleted !");
                 connection.close();
                 resp.getWriter().println("<h1>deleted !</h1>");
-            }else {
+            } else {
                 System.out.println("not deleted !");
             }
         } catch (SQLException | ClassNotFoundException e) {
