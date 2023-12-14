@@ -1,4 +1,4 @@
-package lk.ijse.AjaxTest;
+package lk.ijse.testJson;
 
 
 import javax.json.Json;
