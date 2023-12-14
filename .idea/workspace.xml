@@ -72,7 +72,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Facets",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2505747",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -209,7 +209,7 @@
       <workItem from="1701952763885" duration="3890000" />
       <workItem from="1702004827038" duration="17164000" />
       <workItem from="1702092894809" duration="9295000" />
-      <workItem from="1702362786302" duration="2426000" />
+      <workItem from="1702362786302" duration="3080000" />
     </task>
     <servers />
   </component>
