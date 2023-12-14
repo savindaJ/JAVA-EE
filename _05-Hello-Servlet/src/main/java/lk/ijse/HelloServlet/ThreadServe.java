@@ -18,7 +18,7 @@ public class ThreadServe extends HttpServlet {
         System.out.print("called !");
         ServletContext servletContext = getServletContext();
         String name = servletContext.getInitParameter("name");
-        System.out.println("Servlet 3 context : "+name);
+        System.out.println("Servlet 3 context : " + name);
     }
 
     @Override

@@ -26,6 +26,6 @@ public class ServletTwo extends HttpServlet {
         System.out.println(password);
         resp.getWriter().println(password);
 //        add sample commit !
-        resp.getWriter().println("context name :"+name);
+        resp.getWriter().println("context name :" + name);
     }
 }
