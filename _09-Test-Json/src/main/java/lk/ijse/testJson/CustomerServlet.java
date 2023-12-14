@@ -28,4 +28,9 @@ public class CustomerServlet extends HttpServlet {
         resp.setStatus(200);
         resp.getWriter().print(obj.build());
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("post created !");
+    }
 }
