@@ -27,9 +27,9 @@ public class Test extends HttpServlet {
 
     private Connection connection;
 
-    String URL;
-    String user;
-    String password;
+    private String URL;
+    private String user;
+    private String password;
 
     @Override
     public void init() throws ServletException {
