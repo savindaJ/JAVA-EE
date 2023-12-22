@@ -10,7 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/EmptyStringMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/EmptyStringMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/SameURl.java" beforeDir="false" afterPath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/SameURl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Facets",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2505747",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -217,7 +218,7 @@
       <workItem from="1702613988475" duration="5261000" />
       <workItem from="1702742844341" duration="372000" />
       <workItem from="1702803921843" duration="179000" />
-      <workItem from="1703215119992" duration="10144000" />
+      <workItem from="1703215119992" duration="11044000" />
     </task>
     <servers />
   </component>
