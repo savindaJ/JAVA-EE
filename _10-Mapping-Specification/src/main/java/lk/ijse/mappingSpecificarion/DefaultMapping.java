@@ -24,10 +24,10 @@ import java.io.IOException;
  * @date : 2023-12-22
  * @since : 0.1.0
  **/
-//@WebServlet(urlPatterns = "")
-public class EmptyStringMapping extends HttpServlet {
+@WebServlet(urlPatterns = "/")
+public class DefaultMapping extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("<h1>Empty String Mapping ! (Empty Double quotation mark)</h1>");
+        resp.getWriter().println("<h1>Default Mapping (/) </h1>");
     }
 }
