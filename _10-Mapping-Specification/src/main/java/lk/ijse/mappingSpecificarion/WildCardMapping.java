@@ -28,7 +28,7 @@ import java.io.IOException;
 //@WebServlet(urlPatterns = "/test/*") /test/"anything !" test always use !
 //@WebServlet(urlPatterns = "/*")  // app/"anything !"
 //@WebServlet(urlPatterns = "/**") // exact mapping
-//@WebServlet(urlPatterns = "/*/*")
+@WebServlet(urlPatterns = "/*/*")
 public class WildCardMapping extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

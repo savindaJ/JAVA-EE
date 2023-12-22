@@ -24,7 +24,7 @@ import java.io.IOException;
  * @date : 2023-12-22
  * @since : 0.1.0
  **/
-//@WebServlet(urlPatterns = "")
+@WebServlet(urlPatterns = "")
 public class EmptyStringMapping extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
