@@ -25,18 +25,14 @@ import java.io.IOException;
  * @since : 0.1.0
  **/
 
-//@WebServlet(urlPatterns = "/test/*") /test/"anything !" test always use !
-//@WebServlet(urlPatterns = "/*")  // app/"anything !"
-//@WebServlet(urlPatterns = "/**") // exact mapping
-//@WebServlet(urlPatterns = "/*/*")
-public class WildCardMapping extends HttpServlet {
+@WebServlet(urlPatterns = "*.php")
+//@WebServlet(urlPatterns = "/*.php")
+//@WebServlet(urlPatterns = "abc*.php")
+public class ExtensionMapping extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("<h1>Wild Card Mapping ! (/*)</h1>");
-        resp.getWriter().println("<h1>Wild Card Mapping ! (/*/*)</h1>");
-        resp.getWriter().println("<h1>Wild Card Mapping ! (/test/*)</h1>");
-        resp.getWriter().println("<h1>Wild Card Mapping ! (/**) = Is exact !</h1>");
-        resp.getWriter().println("<h1>http://localhost:8080/map/*</h1>");
-        resp.getWriter().println("<h1>http://localhost:8080/map/*/eee</h1>");
+        resp.getWriter().println("<h1>Extension Mapping ! (*.php)</h1>");
+        resp.getWriter().println("<h1>http://localhost:8080/map/abc.php/.php</h1>");
+        resp.getWriter().println("<h1>/*.php @ abc*.php (Invalid URL Pattern !)</h1>");
     }
 }
