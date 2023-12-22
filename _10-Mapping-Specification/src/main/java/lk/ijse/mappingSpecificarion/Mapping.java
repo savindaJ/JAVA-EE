@@ -18,11 +18,26 @@ import java.io.IOException;
 public class Mapping extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("<h1>Hello My Servlet !</h1>");
+        resp.getWriter().println("<html>" + "<body>" + "<h1>Hello Servlet !</h1>" + "</body>" + "</html>");
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.getWriter().println("<h1>POST Invoke !</h1>");
+    }
+
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.getWriter().println(
+                "<html>\n" +
+                    "<body>\n" +
+                        "<h1>Hello Delete !</h1>" +
+                    "</body>\n" +
+                 "</html>");
+    }
+
+    @Override
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.getWriter().println("<h1>PUT Invoke !</h1>");
     }
 }

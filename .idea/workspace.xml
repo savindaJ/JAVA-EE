@@ -10,6 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/savindaJ.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copyright/savindaJ.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/Mapping.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_10-Mapping-Specification/target/_10-Mapping-Specification-1.0.0/WEB-INF/classes/lk/ijse/mappingSpecificarion/Mapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/_10-Mapping-Specification/target/_10-Mapping-Specification-1.0.0/WEB-INF/classes/lk/ijse/mappingSpecificarion/Mapping.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_10-Mapping-Specification/target/classes/lk/ijse/mappingSpecificarion/Mapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/_10-Mapping-Specification/target/classes/lk/ijse/mappingSpecificarion/Mapping.class" afterDir="false" />
     </list>
@@ -33,6 +36,7 @@
         <option value="Class" />
       </list>
     </option>
+    <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,7 +81,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2505747",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "fileTemplates",
+    "settings.editor.selected.configurable": "copyright.profiles",
     "settings.editor.splitter.proportion": "0.27393076",
     "vue.rearranger.settings.migration": "true"
   },
@@ -217,7 +221,7 @@
       <workItem from="1702613988475" duration="5261000" />
       <workItem from="1702742844341" duration="372000" />
       <workItem from="1702803921843" duration="179000" />
-      <workItem from="1703215119992" duration="6384000" />
+      <workItem from="1703215119992" duration="7061000" />
     </task>
     <servers />
   </component>
