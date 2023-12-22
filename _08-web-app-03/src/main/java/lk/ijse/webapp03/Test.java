@@ -8,10 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 /**
  * @author : savindaJ
@@ -42,7 +39,23 @@ public class Test extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("get !");
+        PreparedStatement pstm = null;
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            connection = DriverManager.getConnection(URL, user, password);
+            pstm = connection.prepareStatement("SELECT *FROM customer");
+            ResultSet set = pstm.executeQuery();
+
+            while (set.next()){
+                System.out.print("Cus ID :"+set.getString(1)+",");
+                System.out.print("Cus name :"+set.getString(2)+",");
+                System.out.print("Cus address :"+set.getString(3)+",");
+                System.out.println("Cus salary :"+set.getString(4));
+            }
+
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
