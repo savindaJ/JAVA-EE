@@ -28,6 +28,6 @@ import java.io.IOException;
 public class EmptyStringMapping extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("<h1>Empty String Mapping !</h1>");
+        resp.getWriter().println("<h1>Empty String Mapping ! (Empty Double quotation mark)</h1>");
     }
 }
