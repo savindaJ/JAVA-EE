@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="_08-web-app-03:war exploded" />
+      <artifact name="_10-Mapping-Specification:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -76,7 +76,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2505747",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "copyright",
+    "settings.editor.selected.configurable": "copyright.profiles",
     "settings.editor.splitter.proportion": "0.27393076",
     "vue.rearranger.settings.migration": "true"
   },
@@ -216,7 +216,7 @@
       <workItem from="1702613988475" duration="5261000" />
       <workItem from="1702742844341" duration="372000" />
       <workItem from="1702803921843" duration="179000" />
-      <workItem from="1703215119992" duration="5665000" />
+      <workItem from="1703215119992" duration="6138000" />
     </task>
     <servers />
   </component>
