@@ -99,9 +99,9 @@
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="_08-web-app-03:war exploded">
+        <artifact name="_10-Mapping-Specification:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/app" />
+            <option name="CONTEXT_PATH" value="/map" />
           </settings>
         </artifact>
       </deployment>
@@ -179,7 +179,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="_08-web-app-03:war exploded" />
+          <artifact name="_10-Mapping-Specification:war exploded" />
         </option>
       </method>
     </configuration>
@@ -216,7 +216,7 @@
       <workItem from="1702613988475" duration="5261000" />
       <workItem from="1702742844341" duration="372000" />
       <workItem from="1702803921843" duration="179000" />
-      <workItem from="1703215119992" duration="5313000" />
+      <workItem from="1703215119992" duration="5665000" />
     </task>
     <servers />
   </component>

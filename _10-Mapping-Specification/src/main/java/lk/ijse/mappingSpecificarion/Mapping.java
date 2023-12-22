@@ -22,10 +22,15 @@ import java.io.IOException;
  * @since : 0.1.0
  **/
 
-@WebServlet(urlPatterns = "/")
+@WebServlet(urlPatterns = "/hello")
 public class Mapping extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("get !");
+        resp.getWriter().println("<h1>Hello My Servlet !</h1>");
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.getWriter().println("<h1>POST Invoke !</h1>");
     }
 }
