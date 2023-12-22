@@ -28,7 +28,8 @@
         <dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
-            <version>4.0.4</version>
+<!--            use to tom cat 10 version !-->
+            <version>6.0.0</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
