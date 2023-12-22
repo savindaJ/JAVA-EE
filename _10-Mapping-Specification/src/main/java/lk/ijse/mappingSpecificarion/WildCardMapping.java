@@ -28,10 +28,15 @@ import java.io.IOException;
 //@WebServlet(urlPatterns = "/test/*") /test/"anything !" test always use !
 //@WebServlet(urlPatterns = "/*")  // app/"anything !"
 //@WebServlet(urlPatterns = "/**") // exact mapping
-@WebServlet(urlPatterns = "/*")
+@WebServlet(urlPatterns = "/*/*")
 public class WildCardMapping extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.getWriter().println("<h1>Wild Card Mapping ! (/*)</h1>");
+        resp.getWriter().println("<h1>Wild Card Mapping ! (/*/*)</h1>");
+        resp.getWriter().println("<h1>Wild Card Mapping ! (/test/*)</h1>");
+        resp.getWriter().println("<h1>Wild Card Mapping ! (/**) = Is exact !</h1>");
+        resp.getWriter().println("<h1>http://localhost:8080/map/*</h1>");
+        resp.getWriter().println("<h1>http://localhost:8080/map/*/eee</h1>");
     }
 }
