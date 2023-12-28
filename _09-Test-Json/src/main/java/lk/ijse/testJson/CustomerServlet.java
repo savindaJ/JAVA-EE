@@ -27,7 +27,6 @@ public class CustomerServlet extends HttpServlet {
         obj.add("data", "");
         resp.setStatus(200);
         resp.getWriter().print(obj.build());
-        doPost(req,resp);
     }
 
     @Override
