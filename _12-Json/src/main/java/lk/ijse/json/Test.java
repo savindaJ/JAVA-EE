@@ -32,19 +32,18 @@ public class Test extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("post");
-        //        client send to json to not working !
+//        client send to json to not working ! but quarry String working !
         String id = req.getParameter("id");
         String name = req.getParameter("name");
         String address = req.getParameter("address");
         String salary = req.getParameter("salary");
-
         System.out.println(salary + name + id + address);
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-//        client send to json to not working !
+//        client send to json to not working ! but quarry String working !
 
         String id = req.getParameter("id");
         String name = req.getParameter("name");
