@@ -36,7 +36,9 @@ public class formAction extends HttpServlet {
         String address = req.getParameter("address");
         String salary = req.getParameter("salary");
 
-        try {
+        System.out.println(name+id+address+salary);
+
+       /* try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection root = DriverManager.getConnection
                     ("jdbc:mysql://localhost:3306/web_test", "root", "80221474");
@@ -54,11 +56,21 @@ public class formAction extends HttpServlet {
         } catch (Exception e) {
             resp.getWriter().println("<h1>Error !!!</h1>");
             throw new RuntimeException(e);
-        }
+        }*/
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("get !");
+    }
+
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("delete !");
+    }
+
+    @Override
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("Put !");
     }
 }
