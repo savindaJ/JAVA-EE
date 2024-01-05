@@ -31,12 +31,25 @@ import java.sql.PreparedStatement;
 public class formAction extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        /*
+         * {
+        "id": "C007",
+        "name": "Thejan",
+        "address": "Jaffna",
+        "salary": "125000"
+         * not working !
+        }
+    * */
+
         String id = req.getParameter("id");
+//        getParameter not Working !
         String name = req.getParameter("name");
         String address = req.getParameter("address");
         String salary = req.getParameter("salary");
-        System.out.println(name+id+address+salary);
-       /* try {
+
+        System.out.println(salary);
+
+        try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection root = DriverManager.getConnection
                     ("jdbc:mysql://localhost:3306/web_test", "root", "80221474");
@@ -47,32 +60,18 @@ public class formAction extends HttpServlet {
             pstm.setDouble(4, Double.parseDouble(salary));
             int affRow = pstm.executeUpdate();
 
-            System.out.println(affRow > 0 ? resp.getWriter().println("<h1>Saved !</h1>") : "not saved !");
+            System.out.println(affRow > 0 ? "Saved !" : "not saved !");
+
+            resp.getWriter().println("<h1>Saved !</h1>");
 
         } catch (Exception e) {
             resp.getWriter().println("<h1>Error !!!</h1>");
             throw new RuntimeException(e);
-        }*/
+        }
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("get !");
-        String id = req.getParameter("id");
-        String name = req.getParameter("name");
-        String address = req.getParameter("address");
-        String salary = req.getParameter("salary");
-
-        System.out.println(name+id+address+salary);
-    }
-
-    @Override
-    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("delete !");
-    }
-
-    @Override
-    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("Put !");
     }
 }
