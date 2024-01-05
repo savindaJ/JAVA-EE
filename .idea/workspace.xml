@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/ExactMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/ExactMapping.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
     <option name="SCHEME" value="Project" />
@@ -222,6 +223,8 @@
       <workItem from="1703519431833" duration="1247000" />
       <workItem from="1703575623797" duration="333000" />
       <workItem from="1703744279873" duration="1252000" />
+      <workItem from="1704345269240" duration="1459000" />
+      <workItem from="1704424196936" duration="2171000" />
     </task>
     <servers />
   </component>
