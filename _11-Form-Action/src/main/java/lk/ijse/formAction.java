@@ -52,9 +52,13 @@ public class formAction extends HttpServlet {
             resp.getWriter().println("<h1>Saved !</h1>");
 
         } catch (Exception e) {
+            resp.getWriter().println("<h1>Error !!!</h1>");
             throw new RuntimeException(e);
         }
+    }
 
-
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("get !");
     }
 }

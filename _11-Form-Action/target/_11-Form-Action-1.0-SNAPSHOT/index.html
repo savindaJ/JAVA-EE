@@ -17,29 +17,34 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
 </head>
 <body>
-<div class="container" style="border-radius : 40px ;background: #afaeae;width: 50vw; margin-top: 10vh; border: 5px solid black;padding: 100px">
+<div class="container" style="border-radius : 40px ;
+        background: #afaeae;width: 50vw; margin-top: 10vh; border: 5px solid black;padding: 100px">
     <form id="test">
         <div class="mb-3">
-            <label class="form-label" >ID</label>
-            <input id="upCID" type="text" class="form-control" placeholder="" name="id">
+            <label class="form-label">ID</label>
+            <label for="upCID"></label><input id="upCID" type="text" class="form-control" placeholder="" name="id">
         </div>
 
         <div class="mb-3">
-            <label class="form-label" >Customer Name</label>
-            <input id="upCName" type="text" class="form-control" placeholder="" name="name">
+            <label class="form-label">Customer Name</label>
+            <label for="upCName"></label><input id="upCName" type="text" class="form-control" placeholder=""
+                                                name="name">
         </div>
 
         <div class="mb-3">
-            <label class="form-label" >Customer address</label>
-            <input id="upCAddress" type="text" class="form-control" placeholder="" name="address">
+            <label class="form-label">Customer address</label>
+            <label for="upCAddress"></label><input id="upCAddress" type="text" class="form-control" placeholder=""
+                                                   name="address">
         </div>
 
         <div class="mb-3">
-            <label class="form-label" >Customer Salary</label>
-            <input id="upCTp" type="text" class="form-control" placeholder="" name="salary">
+            <label class="form-label">Customer Salary</label>
+            <label for="upCTp"></label><input id="upCTp" type="text" class="form-control" placeholder="" name="salary">
         </div>
 
-        <button id="save" form="test" formaction="http://localhost:8080/app/test" formmethod="post" type="submit" class="btn btn-primary">Add Customer</button>
+        <button id="save" form="test" formaction="http://localhost:8080/app/test" type="submit"
+                class="btn btn-primary">Add Customer
+        </button>
     </form>
 </div>
 </body>
