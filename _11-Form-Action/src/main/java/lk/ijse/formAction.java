@@ -18,6 +18,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 
 /**
  * @author : savindaJ
@@ -28,6 +31,30 @@ import java.io.IOException;
 public class formAction extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("post !");
+        String id = req.getParameter("id");
+        String name = req.getParameter("name");
+        String address = req.getParameter("address");
+        String salary = req.getParameter("salary");
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection root = DriverManager.getConnection
+                    ("jdbc:mysql://localhost:3306/web_test", "root", "80221474");
+            PreparedStatement pstm = root.prepareStatement("INSERT INTO customer VALUES (?,?,?,?)");
+            pstm.setString(1, id);
+            pstm.setString(2, name);
+            pstm.setString(3, address);
+            pstm.setDouble(4, Double.parseDouble(salary));
+            int affRow = pstm.executeUpdate();
+
+            System.out.println(affRow > 0 ? "Saved !" : "not saved !");
+
+            resp.getWriter().println("<h1>Saved !</h1>");
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+
     }
 }
