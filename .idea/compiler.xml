@@ -20,6 +20,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="_04-WebApp" target="11" />
+      <module name="_13-JsonLibraris" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
