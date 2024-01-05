@@ -35,9 +35,7 @@ public class formAction extends HttpServlet {
         String name = req.getParameter("name");
         String address = req.getParameter("address");
         String salary = req.getParameter("salary");
-
         System.out.println(name+id+address+salary);
-
        /* try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection root = DriverManager.getConnection
