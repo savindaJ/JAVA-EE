@@ -9,6 +9,7 @@
         <module name="_05-Hello-Servlet" />
         <module name="_06-Servlet-Life-Cycle" />
         <module name="_09-Test-Json" />
+        <module name="_11-Form-Action" />
         <module name="_10-Mapping-Specification" />
         <module name="_07-Servlet-Annotation" />
         <module name="_04-Web-app-02" />
