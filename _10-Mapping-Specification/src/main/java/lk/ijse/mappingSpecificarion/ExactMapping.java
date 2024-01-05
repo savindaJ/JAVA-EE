@@ -46,5 +46,6 @@ public class ExactMapping extends HttpServlet {
         System.out.println("13 : "+req.getServerName());
         System.out.println("14 : "+req.getServerPort());
         System.out.println("15 : "+req.getMethod());
+        System.out.println("16 : "+req.getUserPrincipal());
     }
 }

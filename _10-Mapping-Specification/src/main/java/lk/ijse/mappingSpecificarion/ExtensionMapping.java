@@ -34,5 +34,21 @@ public class ExtensionMapping extends HttpServlet {
         resp.getWriter().println("<h1>Extension Mapping ! (*.php)</h1>");
         resp.getWriter().println("<h1>http://localhost:8080/map/abc.php/.php</h1>");
         resp.getWriter().println("<h1>/*.php @ abc*.php (Invalid URL Pattern !)</h1>");
+
+        System.out.println("1 : "+req.getContextPath());
+        System.out.println("2 : "+req.getServletPath());
+        System.out.println("3 : "+req.getPathInfo());
+        System.out.println("4 : "+req.getPathTranslated());
+        System.out.println("5 : "+req.getQueryString());
+        System.out.println("6 : "+req.getRequestURI());
+        System.out.println("7 : "+req.getRequestURL());
+        System.out.println("8 : "+req.getProtocol());
+        System.out.println("9 : "+req.getScheme());
+        System.out.println("10 : "+req.getRemoteAddr());
+        System.out.println("11 : "+req.getRemotePort());
+        System.out.println("12 : "+req.getRemoteHost());
+        System.out.println("13 : "+req.getServerName());
+        System.out.println("14 : "+req.getServerPort());
+        System.out.println("15 : "+req.getMethod());
     }
 }

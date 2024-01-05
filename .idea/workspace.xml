@@ -10,8 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/DefaultMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/DefaultMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/EmptyStringMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/EmptyStringMapping.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/ExactMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/ExactMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/ExtensionMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/ExtensionMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/WildCardMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/_10-Mapping-Specification/src/main/java/lk/ijse/mappingSpecificarion/WildCardMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_10-Mapping-Specification/target/_10-Mapping-Specification-1.0.0/WEB-INF/classes/lk/ijse/mappingSpecificarion/ExactMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/_10-Mapping-Specification/target/_10-Mapping-Specification-1.0.0/WEB-INF/classes/lk/ijse/mappingSpecificarion/ExactMapping.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_10-Mapping-Specification/target/classes/lk/ijse/mappingSpecificarion/ExactMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/_10-Mapping-Specification/target/classes/lk/ijse/mappingSpecificarion/ExactMapping.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +231,7 @@
       <workItem from="1703575623797" duration="333000" />
       <workItem from="1703744279873" duration="1252000" />
       <workItem from="1704345269240" duration="1459000" />
-      <workItem from="1704424196936" duration="2171000" />
+      <workItem from="1704424196936" duration="4908000" />
     </task>
     <servers />
   </component>
