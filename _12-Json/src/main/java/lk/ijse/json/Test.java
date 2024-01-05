@@ -12,12 +12,17 @@
 package lk.ijse.json;
 
 import com.google.gson.Gson;
+import jakarta.json.Json;
+import jakarta.json.JsonObject;
+import jakarta.json.JsonObjectBuilder;
+import jakarta.json.JsonReader;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
@@ -38,6 +43,42 @@ public class Test extends HttpServlet {
         String address = req.getParameter("address");
         String salary = req.getParameter("salary");
         System.out.println(salary + name + id + address);
+
+//        without a json library get to json !!!!
+
+       /* BufferedReader reader = req.getReader();
+
+        String line ;
+
+        while ((line = reader.readLine())!=null){
+            System.out.println("without Library"+line);
+        }*/
+
+        /*using library !!! (Json P) */
+
+        JsonReader jsonReader = Json.createReader(req.getReader()); /*or using req.getInputStream !*/
+
+        JsonObject jsonObject = jsonReader.readObject();
+
+        System.out.println("Library "+jsonObject);
+
+        System.out.println(jsonObject.getString("id"));
+        System.out.println(jsonObject.getString("name"));
+        System.out.println(jsonObject.getString("address"));
+        System.out.println(jsonObject.getString("salary"));
+
+        /*Write a json obj using Library Json-P*/
+
+        JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder();
+
+        jsonObjectBuilder.add("state","OK");
+        jsonObjectBuilder.add("Message","request send !");
+        resp.setContentType("application/json");
+        /*using write*/
+        resp.getWriter().write(jsonObjectBuilder.build().toString());
+        /*using println*/
+        resp.getWriter().println(Json.createObjectBuilder().add("State","Write").build());
+
 
     }
 

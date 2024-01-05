@@ -33,5 +33,9 @@ public class TestJson extends HttpServlet {
         String address = req.getParameter("address");
         String salary = req.getParameter("salary");
         System.out.println(salary + name + id + address);
+
+
+
+
     }
 }
