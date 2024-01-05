@@ -49,9 +49,7 @@ public class formAction extends HttpServlet {
             pstm.setDouble(4, Double.parseDouble(salary));
             int affRow = pstm.executeUpdate();
 
-            System.out.println(affRow > 0 ? "Saved !" : "not saved !");
-
-            resp.getWriter().println("<h1>Saved !</h1>");
+            System.out.println(affRow > 0 ? resp.getWriter().println("<h1>Saved !</h1>") : "not saved !");
 
         } catch (Exception e) {
             resp.getWriter().println("<h1>Error !!!</h1>");
@@ -62,6 +60,12 @@ public class formAction extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("get !");
+        String id = req.getParameter("id");
+        String name = req.getParameter("name");
+        String address = req.getParameter("address");
+        String salary = req.getParameter("salary");
+
+        System.out.println(name+id+address+salary);
     }
 
     @Override
