@@ -56,7 +56,7 @@ public class TestJson extends HttpServlet {
                         set.getString(3),
                         set.getDouble(4)
                 ));
-
+                /*using Json-P*/
                 /*JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder();
                 jsonObjectBuilder.add("id",set.getString(1));
                 jsonObjectBuilder.add("name",set.getString(2));
