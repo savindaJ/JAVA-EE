@@ -38,6 +38,7 @@ public class Test extends HttpServlet {
         String address = req.getParameter("address");
         String salary = req.getParameter("salary");
         System.out.println(salary + name + id + address);
+
     }
 
     @Override
@@ -77,5 +78,25 @@ public class Test extends HttpServlet {
             resp.getWriter().println("<h1>Error !!!</h1>");
             throw new RuntimeException(e);
         }
+    }
+
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String id = req.getParameter("id");
+        String name = req.getParameter("name");
+        String address = req.getParameter("address");
+        String salary = req.getParameter("salary");
+
+        System.out.println(salary + name + id + address);
+    }
+
+    @Override
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String id = req.getParameter("id");
+        String name = req.getParameter("name");
+        String address = req.getParameter("address");
+        String salary = req.getParameter("salary");
+
+        System.out.println(salary + name + id + address);
     }
 }
