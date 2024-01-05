@@ -24,10 +24,14 @@ import java.io.IOException;
  * @date : 2024-01-05
  * @since : 0.1.0
  **/
-@WebServlet(urlPatterns = "/test")
+@WebServlet(urlPatterns = "/lib")
 public class TestJson extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        String id = req.getParameter("id");
+        String name = req.getParameter("name");
+        String address = req.getParameter("address");
+        String salary = req.getParameter("salary");
+        System.out.println(salary + name + id + address);
     }
 }
