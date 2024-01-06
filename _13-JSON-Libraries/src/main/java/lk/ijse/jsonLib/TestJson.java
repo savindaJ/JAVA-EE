@@ -73,12 +73,15 @@ public class TestJson extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+
         JsonReader reader = Json.createReader(req.getReader());
         JsonObject reqObj = reader.readObject();
         String id = reqObj.getString("id");
         String name = reqObj.getString("name");
         String address = reqObj.getString("address");
         String salary = reqObj.getString("salary");
+//        JsonArray items = reqObj.getJsonArray("items");
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
