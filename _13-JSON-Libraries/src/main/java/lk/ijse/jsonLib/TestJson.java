@@ -12,15 +12,14 @@
 package lk.ijse.jsonLib;
 
 import com.google.gson.Gson;
-import jakarta.json.Json;
-import jakarta.json.JsonArrayBuilder;
-import jakarta.json.JsonObjectBuilder;
+import jakarta.json.*;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -74,16 +73,62 @@ public class TestJson extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        JsonReader reader = Json.createReader(req.getReader());
+        JsonObject reqObj = reader.readObject();
+        String id = reqObj.getString("id");
+        String name = reqObj.getString("name");
+        String address = reqObj.getString("address");
+        String salary = reqObj.getString("salary");
 
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection root = DriverManager.getConnection
+                    ("jdbc:mysql://localhost:3306/web_test", "root", "80221474");
+            PreparedStatement pstm = root.prepareStatement("INSERT INTO customer VALUES (?,?,?,?)");
+            pstm.setString(1,id);
+            pstm.setString(2,name);
+            pstm.setString(3,address);
+            pstm.setDouble(4,Double.parseDouble(salary));
+            if (pstm.executeUpdate()>0){
+                JsonObjectBuilder json = Json.createObjectBuilder();
+                json.add("State","OK");
+                json.add("Message","Successfully Saved !");
+                resp.setContentType("application/json");
+                resp.getWriter().write(json.build().toString());
+            }else {
+                JsonObjectBuilder json = Json.createObjectBuilder();
+                json.add("State","OK");
+                json.add("Message","Not Saved !");
+                resp.setContentType("application/json");
+                resp.getWriter().write(json.build().toString());
+            }
+        } catch (Exception e) {
+            JsonObjectBuilder json = Json.createObjectBuilder();
+            json.add("State","OK");
+            json.add("Message",e.getLocalizedMessage());
+            resp.setContentType("application/json");
+            resp.getWriter().write(json.build().toString());
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        JsonReader reader = Json.createReader(req.getReader());
+        JsonObject reqObj = reader.readObject();
+        String id = reqObj.getString("id");
+        String name = reqObj.getString("name");
+        String address = reqObj.getString("address");
+        String salary = reqObj.getString("salary");
 
+        System.out.println(salary);
     }
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        JsonReader reader = Json.createReader(req.getReader());
+        JsonObject reqObj = reader.readObject();
+        String id = reqObj.getString("id");
+        System.out.println(id);
     }
 }
