@@ -121,7 +121,36 @@ public class TestJson extends HttpServlet {
         String address = reqObj.getString("address");
         String salary = reqObj.getString("salary");
 
-        System.out.println(salary);
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection root = DriverManager.getConnection
+                    ("jdbc:mysql://localhost:3306/web_test", "root", "80221474");
+            PreparedStatement pstm = root.prepareStatement("UPDATE customer SET name=? ,address=? ,salary=? WHERE cus_id=?");
+            pstm.setString(1,name);
+            pstm.setString(2,address);
+            pstm.setDouble(3, Double.parseDouble(salary));
+            pstm.setString(4,id);
+            if (pstm.executeUpdate()>0){
+                JsonObjectBuilder json = Json.createObjectBuilder();
+                json.add("State","OK");
+                json.add("Message","Successfully Updated !");
+                resp.setContentType("application/json");
+                resp.getWriter().write(json.build().toString());
+            }else {
+                JsonObjectBuilder json = Json.createObjectBuilder();
+                json.add("State","OK");
+                json.add("Message","Not Update !");
+                resp.setContentType("application/json");
+                resp.getWriter().write(json.build().toString());
+            }
+        } catch (Exception e) {
+            JsonObjectBuilder json = Json.createObjectBuilder();
+            json.add("State","OK");
+            json.add("Message",e.getLocalizedMessage());
+            resp.setContentType("application/json");
+            resp.getWriter().write(json.build().toString());
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -129,6 +158,32 @@ public class TestJson extends HttpServlet {
         JsonReader reader = Json.createReader(req.getReader());
         JsonObject reqObj = reader.readObject();
         String id = reqObj.getString("id");
-        System.out.println(id);
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection root = DriverManager.getConnection
+                    ("jdbc:mysql://localhost:3306/web_test", "root", "80221474");
+            PreparedStatement pstm = root.prepareStatement("DELETE FROM customer WHERE cus_id=?");
+            pstm.setString(1,id);
+            if (pstm.executeUpdate()>0){
+                JsonObjectBuilder json = Json.createObjectBuilder();
+                json.add("State","OK");
+                json.add("Message","Successfully Deleted !");
+                resp.setContentType("application/json");
+                resp.getWriter().write(json.build().toString());
+            }else {
+                JsonObjectBuilder json = Json.createObjectBuilder();
+                json.add("State","OK");
+                json.add("Message","Not Delete !");
+                resp.setContentType("application/json");
+                resp.getWriter().write(json.build().toString());
+            }
+        } catch (Exception e) {
+            JsonObjectBuilder json = Json.createObjectBuilder();
+            json.add("State","OK");
+            json.add("Message",e.getLocalizedMessage());
+            resp.setContentType("application/json");
+            resp.getWriter().write(json.build().toString());
+            throw new RuntimeException(e);
+        }
     }
 }
