@@ -130,7 +130,7 @@
                 console.log(res.address)
                 console.log(res.salary)
             },
-            error:function (err) {
+            error: function (err) {
                 let phrase = JSON.parse(err.responseText);
                 console.log(phrase.message)
             }
