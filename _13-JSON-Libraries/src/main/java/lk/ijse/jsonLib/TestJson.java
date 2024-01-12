@@ -39,7 +39,7 @@ public class TestJson extends HttpServlet {
 
 //        JsonArrayBuilder list = Json.createArrayBuilder();
 
-        ArrayList<Customer> customers = new ArrayList<>();
+        /*ArrayList<Customer> customers = new ArrayList<>();
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -55,20 +55,39 @@ public class TestJson extends HttpServlet {
                         set.getString(3),
                         set.getDouble(4)
                 ));
-                /*using Json-P*/
-                /*JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder();
+                *//*using Json-P*//*
+                *//*JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder();
                 jsonObjectBuilder.add("id",set.getString(1));
                 jsonObjectBuilder.add("name",set.getString(2));
                 jsonObjectBuilder.add("address",set.getString(3));
                 jsonObjectBuilder.add("salary",set.getDouble(4));
-                list.add(jsonObjectBuilder.build());*/
+                list.add(jsonObjectBuilder.build());*//*
             }
             resp.setContentType("application/json");
             resp.getWriter().println(new Gson().toJson(customers));
         } catch (Exception e) {
             resp.getWriter().println("<h1>Error !!!</h1>");
             throw new RuntimeException(e);
-        }
+        }*/
+
+        JsonObject jsonObject = Json.createReader(req.getReader()).readObject();
+
+        System.out.println(jsonObject.getString("id"));
+        System.out.println(jsonObject.getString("name"));
+        JsonObject address = jsonObject.getJsonObject("address");
+        System.out.println(address.getInt("street"));
+        System.out.println(address.getString("addr"));
+
+        JsonArray contacts = jsonObject.getJsonArray("contacts");
+
+        //get Json array values ! in string type !
+        String num1 = contacts.getString(0);
+        String num2 = contacts.getString(1);
+
+        System.out.println(num1);
+        System.out.println(num2);
+
+
     }
 
     @Override
