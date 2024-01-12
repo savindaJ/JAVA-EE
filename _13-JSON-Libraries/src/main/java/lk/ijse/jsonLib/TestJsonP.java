@@ -13,6 +13,8 @@ package lk.ijse.jsonLib;
 
 import com.google.gson.Gson;
 import jakarta.json.*;
+import jakarta.json.bind.Jsonb;
+import jakarta.json.bind.JsonbBuilder;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -54,11 +56,11 @@ public class TestJsonP extends HttpServlet {
                         set.getDouble(4)
                 ));
                 //  using Json-P
-                var jsonObjectBuilder = Json.createObjectBuilder()
+                /*var jsonObjectBuilder = Json.createObjectBuilder()
                 .add("id", set.getString(1))
                 .add("name", set.getString(2))
                 .add("address", set.getString(3))
-                .add("salary", set.getDouble(4));
+                .add("salary", set.getDouble(4));*/
                 //  list.add(jsonObjectBuilder.build());
             }
             resp.setContentType("application/json");
@@ -99,12 +101,22 @@ public class TestJsonP extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 
-        JsonReader reader = Json.createReader(req.getReader());
+        JsonObject jsonObject = Json.createReader(req.getReader()).readObject();
+        Jsonb builder = JsonbBuilder.create();
+        Customer my = builder.fromJson(jsonObject.toString(), Customer.class);
+
+        String id = my.getId();
+        String name = my.getName();
+        String address = my.getAddress();
+        Double salary = my.getSalary();
+
+
+        /*JsonReader reader = Json.createReader(req.getReader());
         JsonObject reqObj = reader.readObject();
         String id = reqObj.getString("id");
         String name = reqObj.getString("name");
         String address = reqObj.getString("address");
-        String salary = reqObj.getString("salary");
+        String salary = reqObj.getString("salary");*/
 //        JsonArray items = reqObj.getJsonArray("items");
 
         try {
@@ -115,7 +127,7 @@ public class TestJsonP extends HttpServlet {
             pstm.setString(1, id);
             pstm.setString(2, name);
             pstm.setString(3, address);
-            pstm.setDouble(4, Double.parseDouble(salary));
+            pstm.setDouble(4, salary);
             if (pstm.executeUpdate() > 0) {
                 JsonObjectBuilder json = Json.createObjectBuilder();
                 json.add("State", "OK");
@@ -141,12 +153,21 @@ public class TestJsonP extends HttpServlet {
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        var reader = Json.createReader(req.getReader());
+        /*var reader = Json.createReader(req.getReader());
         JsonObject reqObj = reader.readObject();
         String id = reqObj.getString("id");
         String name = reqObj.getString("name");
         String address = reqObj.getString("address");
-        String salary = reqObj.getString("salary");
+        String salary = reqObj.getString("salary");*/
+
+        JsonObject jsonObject = Json.createReader(req.getReader()).readObject();
+        Jsonb builder = JsonbBuilder.create();
+        Customer my = builder.fromJson(jsonObject.toString(), Customer.class);
+
+        String id = my.getId();
+        String name = my.getName();
+        String address = my.getAddress();
+        Double salary = my.getSalary();
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -155,7 +176,7 @@ public class TestJsonP extends HttpServlet {
             PreparedStatement pstm = root.prepareStatement("UPDATE customer SET name=? ,address=? ,salary=? WHERE cus_id=?");
             pstm.setString(1, name);
             pstm.setString(2, address);
-            pstm.setDouble(3, Double.parseDouble(salary));
+            pstm.setDouble(3, salary);
             pstm.setString(4, id);
             if (pstm.executeUpdate() > 0) {
                 var json = Json.createObjectBuilder();
@@ -182,9 +203,17 @@ public class TestJsonP extends HttpServlet {
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        var reader = Json.createReader(req.getReader());
+        /*var reader = Json.createReader(req.getReader());
         var reqObj = reader.readObject();
-        String id = reqObj.getString("id");
+        String id = reqObj.getString("id");*/
+
+        JsonObject jsonObject = Json.createReader(req.getReader()).readObject();
+        Jsonb builder = JsonbBuilder.create();
+        Customer my = builder.fromJson(jsonObject.toString(), Customer.class);
+
+        String id = my.getId();
+
+
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection root = DriverManager.getConnection
