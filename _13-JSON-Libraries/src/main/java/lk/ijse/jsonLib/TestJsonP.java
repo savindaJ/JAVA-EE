@@ -101,9 +101,9 @@ public class TestJsonP extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 
-        JsonObject jsonObject = Json.createReader(req.getReader()).readObject();
+//        JsonObject jsonObject = Json.createReader(req.getReader()).readObject();
         Jsonb builder = JsonbBuilder.create();
-        Customer my = builder.fromJson(jsonObject.toString(), Customer.class);
+        Customer my = builder.fromJson(req.getReader(), Customer.class);
 
         String id = my.getId();
         String name = my.getName();
@@ -160,9 +160,9 @@ public class TestJsonP extends HttpServlet {
         String address = reqObj.getString("address");
         String salary = reqObj.getString("salary");*/
 
-        JsonObject jsonObject = Json.createReader(req.getReader()).readObject();
+//        JsonObject jsonObject = Json.createReader(req.getReader()).readObject();
         Jsonb builder = JsonbBuilder.create();
-        Customer my = builder.fromJson(jsonObject.toString(), Customer.class);
+        Customer my = builder.fromJson(req.getReader(), Customer.class);
 
         String id = my.getId();
         String name = my.getName();
@@ -207,9 +207,9 @@ public class TestJsonP extends HttpServlet {
         var reqObj = reader.readObject();
         String id = reqObj.getString("id");*/
 
-        JsonObject jsonObject = Json.createReader(req.getReader()).readObject();
+//        JsonObject jsonObject = Json.createReader(req.getReader()).readObject();
         Jsonb builder = JsonbBuilder.create();
-        Customer my = builder.fromJson(jsonObject.toString(), Customer.class);
+        Customer my = builder.fromJson(req.getReader(), Customer.class);
 
         String id = my.getId();
 
