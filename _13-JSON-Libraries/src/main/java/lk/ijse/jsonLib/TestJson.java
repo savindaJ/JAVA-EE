@@ -56,11 +56,11 @@ public class TestJson extends HttpServlet {
                         set.getDouble(4)
                 ));
                 //  using Json-P
-                JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder();
-                jsonObjectBuilder.add("id", set.getString(1));
-                jsonObjectBuilder.add("name", set.getString(2));
-                jsonObjectBuilder.add("address", set.getString(3));
-                jsonObjectBuilder.add("salary", set.getDouble(4));
+                JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder()
+                .add("id", set.getString(1))
+                .add("name", set.getString(2))
+                .add("address", set.getString(3))
+                .add("salary", set.getDouble(4));
                 //  list.add(jsonObjectBuilder.build());
             }
             resp.setContentType("application/json");
