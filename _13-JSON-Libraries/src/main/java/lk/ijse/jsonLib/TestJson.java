@@ -80,6 +80,9 @@ public class TestJson extends HttpServlet {
 
         JsonArray contacts = jsonObject.getJsonArray("contacts");
 
+
+        System.out.println(contacts.stream().takeWhile(jsonValue -> false));
+
         //get Json array values ! in string type !
         String num1 = contacts.getString(0);
         String num2 = contacts.getString(1);
