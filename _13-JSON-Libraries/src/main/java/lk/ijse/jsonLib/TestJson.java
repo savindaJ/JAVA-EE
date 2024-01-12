@@ -43,10 +43,10 @@ public class TestJson extends HttpServlet {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection root = DriverManager.getConnection
+            var root = DriverManager.getConnection
                     ("jdbc:mysql://localhost:3306/web_test", "root", "80221474");
-            PreparedStatement pstm = root.prepareStatement("SELECT * FROM customer");
-            ResultSet set = pstm.executeQuery();
+            var pstm = root.prepareStatement("SELECT * FROM customer");
+            var set = pstm.executeQuery();
             while (set.next()) {
 
                 customers.add(new Customer(
@@ -56,7 +56,7 @@ public class TestJson extends HttpServlet {
                         set.getDouble(4)
                 ));
                 //  using Json-P
-                JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder()
+                var jsonObjectBuilder = Json.createObjectBuilder()
                 .add("id", set.getString(1))
                 .add("name", set.getString(2))
                 .add("address", set.getString(3))
@@ -143,7 +143,7 @@ public class TestJson extends HttpServlet {
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        JsonReader reader = Json.createReader(req.getReader());
+        var reader = Json.createReader(req.getReader());
         JsonObject reqObj = reader.readObject();
         String id = reqObj.getString("id");
         String name = reqObj.getString("name");
@@ -160,20 +160,20 @@ public class TestJson extends HttpServlet {
             pstm.setDouble(3, Double.parseDouble(salary));
             pstm.setString(4, id);
             if (pstm.executeUpdate() > 0) {
-                JsonObjectBuilder json = Json.createObjectBuilder();
+                var json = Json.createObjectBuilder();
                 json.add("State", "OK");
                 json.add("Message", "Successfully Updated !");
                 resp.setContentType("application/json");
                 resp.getWriter().write(json.build().toString());
             } else {
-                JsonObjectBuilder json = Json.createObjectBuilder();
+                var json = Json.createObjectBuilder();
                 json.add("State", "OK");
                 json.add("Message", "Not Update !");
                 resp.setContentType("application/json");
                 resp.getWriter().write(json.build().toString());
             }
         } catch (Exception e) {
-            JsonObjectBuilder json = Json.createObjectBuilder();
+            var json = Json.createObjectBuilder();
             json.add("State", "OK");
             json.add("Message", e.getLocalizedMessage());
             resp.setContentType("application/json");
@@ -184,8 +184,8 @@ public class TestJson extends HttpServlet {
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        JsonReader reader = Json.createReader(req.getReader());
-        JsonObject reqObj = reader.readObject();
+        var reader = Json.createReader(req.getReader());
+        var reqObj = reader.readObject();
         String id = reqObj.getString("id");
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
