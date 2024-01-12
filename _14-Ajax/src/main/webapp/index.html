@@ -22,7 +22,7 @@
     </style>
 </head>
 <body>
-<div class="container d-flex w-100" style="border-radius : 40px ;
+<div class="container d-flex" style="border-radius : 40px ;
         background: #afaeae; height: 80vh; margin-top: 10vh; border: 5px solid black;padding: 50px">
 
     <form>
@@ -86,6 +86,31 @@
     </div>
 </div>
 <script src="assets/js/code.jquery.com_jquery-3.7.1.min.js.js"></script>
-<script src="assets/js/index.js"></script>
+<script>
+    $('#btnSave').on('click', function () {
+
+        console.log("click !")
+
+        let http = new XMLHttpRequest();
+
+        console.log(http.readyState, 'after creating request state !'); //state 0
+
+        http.open('get', 'data/customers.json');
+
+        http.addEventListener('readystatechange', (event) => {
+            if (http.readyState==4){
+                console.log(http.responseText)
+            }
+            console.log(http.readyState, 'ready state changed !');
+
+        });
+
+        http.send();
+        console.log(http.readyState, 'after sending request this state !'); //state 1
+
+
+
+    });
+</script>
 </body>
 </html>
