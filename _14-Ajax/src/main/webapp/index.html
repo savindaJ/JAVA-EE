@@ -87,8 +87,8 @@
 </div>
 <script src="assets/js/code.jquery.com_jquery-3.7.1.min.js.js"></script>
 <script>
-    $('#btnSave').on('click', function () {
-
+    $('#btnGetAll').on('click', function () {
+        $('#order-tbl-body').empty();
         console.log("click !")
 
         let http = new XMLHttpRequest();
@@ -98,15 +98,45 @@
         http.open('get', 'data/customers.json');
 
         http.addEventListener('readystatechange', (event) => {
-            if (http.readyState == 4) {
-                console.log(http.responseText)
+            if (http.readyState === 4 && http.status === 200) {
+                console.log(http.responseText);
+                $('#order-tbl-body').append(`
+                <tr>
+                <td>${JSON.parse(http.responseText).id}</td>
+                <td>${JSON.parse(http.responseText).name}</td>
+                <td>${JSON.parse(http.responseText).address}</td>
+                <td>${JSON.parse(http.responseText).salary}</td>
+                </tr>`);
             }
             console.log(http.readyState, 'ready state changed !');
+
         });
 
         http.send();
         console.log(http.readyState, 'after sending request this state !'); //state 1
+        console.clear();
     });
 </script>
+
+<script>
+    $('#btnSave').on('click', function () {
+        $.ajax({
+            url: 'data/customers.json',
+            type: 'get',
+            // async:true,
+            success: function (res) {
+                console.log(res.id)
+                console.log(res.name)
+                console.log(res.address)
+                console.log(res.salary)
+            },
+            error:function (err) {
+                let phrase = JSON.parse(err.responseText);
+                console.log(phrase.message)
+            }
+        })
+    });
+</script>
+
 </body>
 </html>
