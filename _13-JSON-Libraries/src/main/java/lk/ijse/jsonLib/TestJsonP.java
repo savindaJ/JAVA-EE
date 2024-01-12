@@ -64,8 +64,10 @@ public class TestJsonP extends HttpServlet {
                 //  list.add(jsonObjectBuilder.build());
             }
             resp.setContentType("application/json");
+            resp.setStatus(HttpServletResponse.SC_CREATED);
             resp.getWriter().println(new Gson().toJson(customers));
         } catch (Exception e) {
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             resp.getWriter().println("<h1>Error !!!</h1>");
             throw new RuntimeException(e);
         }
@@ -133,6 +135,7 @@ public class TestJsonP extends HttpServlet {
                 json.add("State", "OK");
                 json.add("Message", "Successfully Saved !");
                 resp.setContentType("application/json");
+                resp.setStatus(HttpServletResponse.SC_CREATED);
                 resp.getWriter().write(json.build().toString());
             } else {
                 JsonObjectBuilder json = Json.createObjectBuilder();
@@ -146,6 +149,7 @@ public class TestJsonP extends HttpServlet {
             json.add("State", "NOT");
             json.add("Message", e.getLocalizedMessage());
             resp.setContentType("application/json");
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             resp.getWriter().write(json.build().toString());
             throw new RuntimeException(e);
         }
@@ -183,12 +187,14 @@ public class TestJsonP extends HttpServlet {
                 json.add("State", "OK");
                 json.add("Message", "Successfully Updated !");
                 resp.setContentType("application/json");
+                resp.setStatus(HttpServletResponse.SC_CREATED);
                 resp.getWriter().write(json.build().toString());
             } else {
                 var json = Json.createObjectBuilder();
                 json.add("State", "NOT");
                 json.add("Message", "Not Update !");
                 resp.setContentType("application/json");
+                resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
                 resp.getWriter().write(json.build().toString());
             }
         } catch (Exception e) {
@@ -196,6 +202,7 @@ public class TestJsonP extends HttpServlet {
             json.add("State", "NOT");
             json.add("Message", e.getLocalizedMessage());
             resp.setContentType("application/json");
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             resp.getWriter().write(json.build().toString());
             throw new RuntimeException(e);
         }
@@ -225,12 +232,14 @@ public class TestJsonP extends HttpServlet {
                 json.add("State", "OK");
                 json.add("Message", "Successfully Deleted !");
                 resp.setContentType("application/json");
+                resp.setStatus(HttpServletResponse.SC_CREATED);
                 resp.getWriter().write(json.build().toString());
             } else {
                 JsonObjectBuilder json = Json.createObjectBuilder();
                 json.add("State", "NOT");
                 json.add("Message", "Not Delete !");
                 resp.setContentType("application/json");
+                resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
                 resp.getWriter().write(json.build().toString());
             }
         } catch (Exception e) {
@@ -238,6 +247,7 @@ public class TestJsonP extends HttpServlet {
             json.add("State", "NOT");
             json.add("Message", e.getLocalizedMessage());
             resp.setContentType("application/json");
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             resp.getWriter().write(json.build().toString());
             throw new RuntimeException(e);
         }
