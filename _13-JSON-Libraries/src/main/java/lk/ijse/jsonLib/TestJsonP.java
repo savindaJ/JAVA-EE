@@ -67,7 +67,7 @@ public class TestJsonP extends HttpServlet {
             resp.setStatus(HttpServletResponse.SC_CREATED);
             resp.getWriter().println(new Gson().toJson(customers));
         } catch (Exception e) {
-            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            resp.setStatus(HttpServletResponse.SC_EXPECTATION_FAILED);
             resp.getWriter().println("<h1>Error !!!</h1>");
             throw new RuntimeException(e);
         }
@@ -149,7 +149,7 @@ public class TestJsonP extends HttpServlet {
             json.add("State", "NOT");
             json.add("Message", e.getLocalizedMessage());
             resp.setContentType("application/json");
-            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            resp.setStatus(HttpServletResponse.SC_EXPECTATION_FAILED);
             resp.getWriter().write(json.build().toString());
             throw new RuntimeException(e);
         }
@@ -187,14 +187,14 @@ public class TestJsonP extends HttpServlet {
                 json.add("State", "OK");
                 json.add("Message", "Successfully Updated !");
                 resp.setContentType("application/json");
-                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+                resp.setStatus(HttpServletResponse.SC_NO_CONTENT); //204
                 resp.getWriter().write(json.build().toString());
             } else {
                 var json = Json.createObjectBuilder();
                 json.add("State", "NOT");
                 json.add("Message", "Not Update !");
                 resp.setContentType("application/json");
-                resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+                resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); //500
                 resp.getWriter().write(json.build().toString());
             }
         } catch (Exception e) {
@@ -202,7 +202,7 @@ public class TestJsonP extends HttpServlet {
             json.add("State", "NOT");
             json.add("Message", e.getLocalizedMessage());
             resp.setContentType("application/json");
-            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); //500
+            resp.setStatus(HttpServletResponse.SC_EXPECTATION_FAILED); //417
             resp.getWriter().write(json.build().toString());
             throw new RuntimeException(e);
         }
@@ -247,7 +247,7 @@ public class TestJsonP extends HttpServlet {
             json.add("State", "NOT");
             json.add("Message", e.getLocalizedMessage());
             resp.setContentType("application/json");
-            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            resp.setStatus(HttpServletResponse.SC_EXPECTATION_FAILED);
             resp.getWriter().write(json.build().toString());
             throw new RuntimeException(e);
         }
