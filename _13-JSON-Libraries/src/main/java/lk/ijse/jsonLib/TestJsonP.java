@@ -136,14 +136,14 @@ public class TestJsonP extends HttpServlet {
                 resp.getWriter().write(json.build().toString());
             } else {
                 JsonObjectBuilder json = Json.createObjectBuilder();
-                json.add("State", "OK");
+                json.add("State", "NOT");
                 json.add("Message", "Not Saved !");
                 resp.setContentType("application/json");
                 resp.getWriter().write(json.build().toString());
             }
         } catch (Exception e) {
             JsonObjectBuilder json = Json.createObjectBuilder();
-            json.add("State", "OK");
+            json.add("State", "NOT");
             json.add("Message", e.getLocalizedMessage());
             resp.setContentType("application/json");
             resp.getWriter().write(json.build().toString());
@@ -186,14 +186,14 @@ public class TestJsonP extends HttpServlet {
                 resp.getWriter().write(json.build().toString());
             } else {
                 var json = Json.createObjectBuilder();
-                json.add("State", "OK");
+                json.add("State", "NOT");
                 json.add("Message", "Not Update !");
                 resp.setContentType("application/json");
                 resp.getWriter().write(json.build().toString());
             }
         } catch (Exception e) {
             var json = Json.createObjectBuilder();
-            json.add("State", "OK");
+            json.add("State", "NOT");
             json.add("Message", e.getLocalizedMessage());
             resp.setContentType("application/json");
             resp.getWriter().write(json.build().toString());
@@ -228,14 +228,14 @@ public class TestJsonP extends HttpServlet {
                 resp.getWriter().write(json.build().toString());
             } else {
                 JsonObjectBuilder json = Json.createObjectBuilder();
-                json.add("State", "OK");
+                json.add("State", "NOT");
                 json.add("Message", "Not Delete !");
                 resp.setContentType("application/json");
                 resp.getWriter().write(json.build().toString());
             }
         } catch (Exception e) {
             JsonObjectBuilder json = Json.createObjectBuilder();
-            json.add("State", "OK");
+            json.add("State", "NOT");
             json.add("Message", e.getLocalizedMessage());
             resp.setContentType("application/json");
             resp.getWriter().write(json.build().toString());
