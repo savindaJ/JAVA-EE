@@ -39,7 +39,7 @@ public class TestJson extends HttpServlet {
 
 //        JsonArrayBuilder list = Json.createArrayBuilder();
 
-        /*ArrayList<Customer> customers = new ArrayList<>();
+        ArrayList<Customer> customers = new ArrayList<>();
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -55,22 +55,22 @@ public class TestJson extends HttpServlet {
                         set.getString(3),
                         set.getDouble(4)
                 ));
-                *//*using Json-P*//*
-                *//*JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder();
-                jsonObjectBuilder.add("id",set.getString(1));
-                jsonObjectBuilder.add("name",set.getString(2));
-                jsonObjectBuilder.add("address",set.getString(3));
-                jsonObjectBuilder.add("salary",set.getDouble(4));
-                list.add(jsonObjectBuilder.build());*//*
+                //  using Json-P
+                JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder();
+                jsonObjectBuilder.add("id", set.getString(1));
+                jsonObjectBuilder.add("name", set.getString(2));
+                jsonObjectBuilder.add("address", set.getString(3));
+                jsonObjectBuilder.add("salary", set.getDouble(4));
+                //  list.add(jsonObjectBuilder.build());
             }
             resp.setContentType("application/json");
             resp.getWriter().println(new Gson().toJson(customers));
         } catch (Exception e) {
             resp.getWriter().println("<h1>Error !!!</h1>");
             throw new RuntimeException(e);
-        }*/
+        }
 
-        JsonObject jsonObject = Json.createReader(req.getReader()).readObject();
+        /*JsonObject jsonObject = Json.createReader(req.getReader()).readObject();
 
         System.out.println(jsonObject.getString("id"));
         System.out.println(jsonObject.getString("name"));
@@ -89,6 +89,10 @@ public class TestJson extends HttpServlet {
 
         System.out.println(num1);
         System.out.println(num2);
+
+        resp.getWriter().write("{state:\"ok\"}");*/
+
+        // can send a json object by using create object builder
 
 
     }
@@ -110,27 +114,27 @@ public class TestJson extends HttpServlet {
             Connection root = DriverManager.getConnection
                     ("jdbc:mysql://localhost:3306/web_test", "root", "80221474");
             PreparedStatement pstm = root.prepareStatement("INSERT INTO customer VALUES (?,?,?,?)");
-            pstm.setString(1,id);
-            pstm.setString(2,name);
-            pstm.setString(3,address);
-            pstm.setDouble(4,Double.parseDouble(salary));
-            if (pstm.executeUpdate()>0){
+            pstm.setString(1, id);
+            pstm.setString(2, name);
+            pstm.setString(3, address);
+            pstm.setDouble(4, Double.parseDouble(salary));
+            if (pstm.executeUpdate() > 0) {
                 JsonObjectBuilder json = Json.createObjectBuilder();
-                json.add("State","OK");
-                json.add("Message","Successfully Saved !");
+                json.add("State", "OK");
+                json.add("Message", "Successfully Saved !");
                 resp.setContentType("application/json");
                 resp.getWriter().write(json.build().toString());
-            }else {
+            } else {
                 JsonObjectBuilder json = Json.createObjectBuilder();
-                json.add("State","OK");
-                json.add("Message","Not Saved !");
+                json.add("State", "OK");
+                json.add("Message", "Not Saved !");
                 resp.setContentType("application/json");
                 resp.getWriter().write(json.build().toString());
             }
         } catch (Exception e) {
             JsonObjectBuilder json = Json.createObjectBuilder();
-            json.add("State","OK");
-            json.add("Message",e.getLocalizedMessage());
+            json.add("State", "OK");
+            json.add("Message", e.getLocalizedMessage());
             resp.setContentType("application/json");
             resp.getWriter().write(json.build().toString());
             throw new RuntimeException(e);
@@ -151,27 +155,27 @@ public class TestJson extends HttpServlet {
             Connection root = DriverManager.getConnection
                     ("jdbc:mysql://localhost:3306/web_test", "root", "80221474");
             PreparedStatement pstm = root.prepareStatement("UPDATE customer SET name=? ,address=? ,salary=? WHERE cus_id=?");
-            pstm.setString(1,name);
-            pstm.setString(2,address);
+            pstm.setString(1, name);
+            pstm.setString(2, address);
             pstm.setDouble(3, Double.parseDouble(salary));
-            pstm.setString(4,id);
-            if (pstm.executeUpdate()>0){
+            pstm.setString(4, id);
+            if (pstm.executeUpdate() > 0) {
                 JsonObjectBuilder json = Json.createObjectBuilder();
-                json.add("State","OK");
-                json.add("Message","Successfully Updated !");
+                json.add("State", "OK");
+                json.add("Message", "Successfully Updated !");
                 resp.setContentType("application/json");
                 resp.getWriter().write(json.build().toString());
-            }else {
+            } else {
                 JsonObjectBuilder json = Json.createObjectBuilder();
-                json.add("State","OK");
-                json.add("Message","Not Update !");
+                json.add("State", "OK");
+                json.add("Message", "Not Update !");
                 resp.setContentType("application/json");
                 resp.getWriter().write(json.build().toString());
             }
         } catch (Exception e) {
             JsonObjectBuilder json = Json.createObjectBuilder();
-            json.add("State","OK");
-            json.add("Message",e.getLocalizedMessage());
+            json.add("State", "OK");
+            json.add("Message", e.getLocalizedMessage());
             resp.setContentType("application/json");
             resp.getWriter().write(json.build().toString());
             throw new RuntimeException(e);
@@ -188,24 +192,24 @@ public class TestJson extends HttpServlet {
             Connection root = DriverManager.getConnection
                     ("jdbc:mysql://localhost:3306/web_test", "root", "80221474");
             PreparedStatement pstm = root.prepareStatement("DELETE FROM customer WHERE cus_id=?");
-            pstm.setString(1,id);
-            if (pstm.executeUpdate()>0){
+            pstm.setString(1, id);
+            if (pstm.executeUpdate() > 0) {
                 JsonObjectBuilder json = Json.createObjectBuilder();
-                json.add("State","OK");
-                json.add("Message","Successfully Deleted !");
+                json.add("State", "OK");
+                json.add("Message", "Successfully Deleted !");
                 resp.setContentType("application/json");
                 resp.getWriter().write(json.build().toString());
-            }else {
+            } else {
                 JsonObjectBuilder json = Json.createObjectBuilder();
-                json.add("State","OK");
-                json.add("Message","Not Delete !");
+                json.add("State", "OK");
+                json.add("Message", "Not Delete !");
                 resp.setContentType("application/json");
                 resp.getWriter().write(json.build().toString());
             }
         } catch (Exception e) {
             JsonObjectBuilder json = Json.createObjectBuilder();
-            json.add("State","OK");
-            json.add("Message",e.getLocalizedMessage());
+            json.add("State", "OK");
+            json.add("Message", e.getLocalizedMessage());
             resp.setContentType("application/json");
             resp.getWriter().write(json.build().toString());
             throw new RuntimeException(e);
