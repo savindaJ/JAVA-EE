@@ -24,6 +24,18 @@ public class Customer implements Serializable {
     private String address;
     private Double salary;
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
+
+    public Customer(){}
+
     public Customer(String id, String name, String address, Double salary) {
         this.id = id;
         this.name = name;
