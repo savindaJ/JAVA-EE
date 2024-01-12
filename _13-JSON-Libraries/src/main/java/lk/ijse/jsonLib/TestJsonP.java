@@ -112,6 +112,11 @@ public class TestJsonP extends HttpServlet {
         String address = my.getAddress();
         Double salary = my.getSalary();
 
+        if (id.length()>3){
+            resp.sendError(HttpServletResponse.SC_BAD_REQUEST,"invalid customer ID !");
+            return;
+        }
+
 
         /*JsonReader reader = Json.createReader(req.getReader());
         JsonObject reqObj = reader.readObject();
@@ -239,6 +244,7 @@ public class TestJsonP extends HttpServlet {
                 json.add("State", "NOT");
                 json.add("Message", "Not Delete !");
                 resp.setContentType("application/json");
+                resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR,"Faild to delete this customer !");
                 resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
                 resp.getWriter().write(json.build().toString());
             }
