@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="_13-JSON-Libraries:war exploded" />
+      <artifact name="_14-Ajax:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/_14-Ajax/src/main/java/lk/ijse/ajax/api/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14-Ajax/src/main/java/lk/ijse/ajax/api/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14-Ajax/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_14-Ajax/src/main/webapp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +235,7 @@
       <workItem from="1704516224883" duration="1919000" />
       <workItem from="1704527883716" duration="1128000" />
       <workItem from="1704985097110" duration="727000" />
-      <workItem from="1705028238164" duration="16780000" />
+      <workItem from="1705028238164" duration="19252000" />
     </task>
     <servers />
   </component>
