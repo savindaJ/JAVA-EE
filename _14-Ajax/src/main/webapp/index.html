@@ -98,18 +98,14 @@
         http.open('get', 'data/customers.json');
 
         http.addEventListener('readystatechange', (event) => {
-            if (http.readyState==4){
+            if (http.readyState == 4) {
                 console.log(http.responseText)
             }
             console.log(http.readyState, 'ready state changed !');
-
         });
 
         http.send();
         console.log(http.readyState, 'after sending request this state !'); //state 1
-
-
-
     });
 </script>
 </body>
