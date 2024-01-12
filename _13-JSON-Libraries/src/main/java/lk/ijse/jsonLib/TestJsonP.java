@@ -19,12 +19,10 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.util.ArrayList;
 
 /**
@@ -33,7 +31,7 @@ import java.util.ArrayList;
  * @since : 0.1.0
  **/
 @WebServlet(urlPatterns = "/lib")
-public class TestJson extends HttpServlet {
+public class TestJsonP extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
