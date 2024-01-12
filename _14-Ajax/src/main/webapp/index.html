@@ -87,7 +87,7 @@
 </div>
 <script src="assets/js/code.jquery.com_jquery-3.7.1.min.js.js"></script>
 <script>
-    $('#btnGetAll').on('click', function () {
+    $('#ddd').on('click', function () {
         $('#order-tbl-body').empty();
         console.log("click !")
 
@@ -133,6 +133,30 @@
             error: function (err) {
                 let phrase = JSON.parse(err.responseText);
                 console.log(phrase.message)
+            }
+        })
+    });
+</script>
+
+<script>
+    $('#btnGetAll').on('click', function () {
+        $.ajax({
+            url:'http://localhost:8080/app/customer',
+            type: 'get',
+            success:function (resp) {
+                console.log(resp)
+                for (const customer of resp) {
+                    $('#order-tbl-body').append(`
+                <tr>
+                <td>${resp[0].id}</td>
+                <td>${resp[1].name}</td>
+                <td>${resp[2].address}</td>
+                <td>${resp[3].salary}</td>
+                </tr>`);
+                }
+            },
+            error:function () {
+
             }
         })
     });

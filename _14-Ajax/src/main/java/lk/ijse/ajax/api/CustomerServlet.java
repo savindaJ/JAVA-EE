@@ -11,6 +11,7 @@
 
 package lk.ijse.ajax.api;
 
+import com.google.gson.Gson;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -18,6 +19,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.sql.DriverManager;
+import java.util.ArrayList;
 
 /**
  * @author : savindaJ
@@ -28,7 +31,37 @@ import java.io.IOException;
 public class CustomerServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("get !");
+        ArrayList<Customer> customers = new ArrayList<>();
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            var root = DriverManager.getConnection
+                    ("jdbc:mysql://localhost:3306/web_test", "root", "80221474");
+            var pstm = root.prepareStatement("SELECT * FROM customer");
+            var set = pstm.executeQuery();
+            while (set.next()) {
+
+                customers.add(new Customer(
+                        set.getString(1),
+                        set.getString(2),
+                        set.getString(3),
+                        set.getDouble(4)
+                ));
+                //  using Json-P
+                /*var jsonObjectBuilder = Json.createObjectBuilder()
+                .add("id", set.getString(1))
+                .add("name", set.getString(2))
+                .add("address", set.getString(3))
+                .add("salary", set.getDouble(4));*/
+                //  list.add(jsonObjectBuilder.build());
+            }
+            resp.setContentType("application/json");
+            resp.setStatus(HttpServletResponse.SC_CREATED);
+            resp.getWriter().println(new Gson().toJson(customers));
+        } catch (Exception e) {
+            resp.setStatus(HttpServletResponse.SC_EXPECTATION_FAILED);
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
