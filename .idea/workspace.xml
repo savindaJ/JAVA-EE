@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="" />
+    <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/_14-Ajax/src/main/java/lk/ijse/ajax/api/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14-Ajax/src/main/java/lk/ijse/ajax/api/CustomerServlet.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
     <option name="SCHEME" value="Project" />
@@ -67,7 +69,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "11",
     "last_directory_selection": "/Users/savindajayasekara/WorkZone/Projects/JAVA-EE/_13-JSON-Libraries/src/test/java",
-    "last_opened_file_path": "/Users/savindajayasekara/WorkZone/Projects/JAVA-EE/01-POS-FrontEnd/assets/image",
+    "last_opened_file_path": "/Users/savindajayasekara/WorkZone/Projects/JAVA-EE/_14-Ajax/src/main/webapp/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -89,11 +91,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_14-Ajax/src/main/webapp/assets" />
       <recent name="$PROJECT_DIR$/01-POS-FrontEnd/assets/image" />
       <recent name="$PROJECT_DIR$/_11-Form-Action/src/main/webapp" />
       <recent name="$PROJECT_DIR$/_09-Ajax-Test/src/main/java/lib" />
       <recent name="$PROJECT_DIR$/_09-Ajax-Test/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/01-POS-FrontEnd" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="lk.ijse.jsonLib" />
@@ -101,11 +103,10 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.17" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.17" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER" value="false" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="_13-JSON-Libraries:war exploded">
+        <artifact name="_14-Ajax:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/app" />
           </settings>
@@ -185,7 +186,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="_13-JSON-Libraries:war exploded" />
+          <artifact name="_14-Ajax:war exploded" />
         </option>
       </method>
     </configuration>
@@ -234,7 +235,7 @@
       <workItem from="1704516224883" duration="1919000" />
       <workItem from="1704527883716" duration="1128000" />
       <workItem from="1704985097110" duration="727000" />
-      <workItem from="1705028238164" duration="15757000" />
+      <workItem from="1705028238164" duration="16780000" />
     </task>
     <servers />
   </component>

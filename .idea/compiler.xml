@@ -15,6 +15,7 @@
         <module name="_07-Servlet-Annotation" />
         <module name="_13-JSON-Libraries" />
         <module name="_04-Web-app-02" />
+        <module name="_14-Ajax" />
         <module name="_08-web-app-03" />
         <module name="03-Hello-EE-MVN" />
       </profile>
