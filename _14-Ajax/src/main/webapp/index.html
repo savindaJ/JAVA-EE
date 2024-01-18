@@ -205,7 +205,8 @@
             dataType: 'json',
             data: JSON.stringify(customer),
             success:function (resp) {
-                alert('saved !');
+                alert(resp.message);
+                getAll();
             },
             error:function (err) {
                 let phr = JSON.parse(err.responseText);
@@ -213,6 +214,8 @@
             }
         });
     });
+
+    getAll();
 </script>
 
 </body>

@@ -86,7 +86,7 @@ public class CustomerServlet extends HttpServlet {
             if(set>0){
                 resp.setContentType("application/json");
                 resp.setStatus(HttpServletResponse.SC_CREATED);
-                resp.getWriter().write(jsonb.toJson(customer));
+                resp.getWriter().write(jsonb.toJson(new RespMessage("Successfully saved !","ok")));
             }
         } catch (Exception e) {
             resp.setStatus(HttpServletResponse.SC_EXPECTATION_FAILED);
