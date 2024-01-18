@@ -96,7 +96,10 @@ public class CustomerServlet extends HttpServlet {
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        System.out.println("put !");
+        Jsonb jsonb = JsonbBuilder.create();
+        Customer customer = jsonb.fromJson(req.getReader(), Customer.class);
+        System.out.println(customer);
     }
 
     @Override
