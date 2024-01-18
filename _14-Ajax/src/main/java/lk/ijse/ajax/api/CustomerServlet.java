@@ -12,6 +12,8 @@
 package lk.ijse.ajax.api;
 
 import com.google.gson.Gson;
+import jakarta.json.bind.Jsonb;
+import jakarta.json.bind.JsonbBuilder;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -66,7 +68,30 @@ public class CustomerServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Jsonb jsonb = JsonbBuilder.create();
+        Customer customer = jsonb.fromJson(req.getReader(), Customer.class);
+        System.out.println(customer);
 
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            var root = DriverManager.getConnection
+                    ("jdbc:mysql://localhost:3306/web_test", "root", "80221474");
+            var pstm = root.prepareStatement("INSERT INTO customer VALUES (?,?,?,?)");
+            pstm.setString(1,customer.getId());
+            pstm.setString(2,customer.getName());
+            pstm.setString(3,customer.getAddress());
+            pstm.setDouble(4,customer.getSalary());
+            var set = pstm.executeUpdate();
+
+            if(set>0){
+                resp.setContentType("application/json");
+                resp.setStatus(HttpServletResponse.SC_CREATED);
+                resp.getWriter().write(jsonb.toJson(customer));
+            }
+        } catch (Exception e) {
+            resp.setStatus(HttpServletResponse.SC_EXPECTATION_FAILED);
+            throw new RuntimeException(e);
+        }
     }
 
     @Override

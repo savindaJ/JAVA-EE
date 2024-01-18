@@ -28,24 +28,26 @@
     <form>
         <div class="mb-3">
             <label class="form-label">ID</label>
-            <label for="upCID"></label><input id="upCID" type="text" class="form-control" placeholder="" name="id">
+            <label for="txtCusId"></label><input id="txtCusId" type="text" class="form-control" placeholder=""
+                                                 name="id">
         </div>
 
         <div class="mb-3">
             <label class="form-label">Customer Name</label>
-            <label for="upCName"></label><input id="upCName" type="text" class="form-control" placeholder=""
+            <label for="txtName"></label><input id="txtName" type="text" class="form-control" placeholder=""
                                                 name="name">
         </div>
 
         <div class="mb-3">
             <label class="form-label">Customer address</label>
-            <label for="upCAddress"></label><input id="upCAddress" type="text" class="form-control" placeholder=""
+            <label for="txtAddress"></label><input id="txtAddress" type="text" class="form-control" placeholder=""
                                                    name="address">
         </div>
 
         <div class="mb-3">
             <label class="form-label">Customer Salary</label>
-            <label for="upCTp"></label><input id="upCTp" type="text" class="form-control" placeholder="" name="salary">
+            <label for="txtSalary"></label><input id="txtSalary" type="text" class="form-control" placeholder=""
+                                                  name="salary">
         </div>
 
         <div class="row">
@@ -119,7 +121,7 @@
 </script>
 
 <script>
-    $('#btnSave').on('click', function () {
+    $('#save').on('click', function () {
         $.ajax({
             url: 'data/customers.json',
             type: 'get',
@@ -140,25 +142,76 @@
 
 <script>
     $('#btnGetAll').on('click', function () {
+        $('#order-tbl-body').empty();
         $.ajax({
-            url:'http://localhost:8080/app/customer',
+            url: 'http://localhost:8080/app/customer',
             type: 'get',
-            success:function (resp) {
+            success: function (resp) {
                 console.log(resp)
                 for (const customer of resp) {
                     $('#order-tbl-body').append(`
                 <tr>
-                <td>${resp[0].id}</td>
-                <td>${resp[1].name}</td>
-                <td>${resp[2].address}</td>
-                <td>${resp[3].salary}</td>
+                <td>${customer.id}</td>
+                <td>${customer.name}</td>
+                <td>${customer.address}</td>
+                <td>${customer.salary}</td>
                 </tr>`);
                 }
             },
-            error:function () {
+            error: function () {
 
             }
         })
+    });
+</script>
+
+<script>
+
+    function getAll() {
+        $('#order-tbl-body').empty();
+        $.ajax({
+            url: 'http://localhost:8080/app/customer',
+            type: 'get',
+            success: function (resp) {
+                console.log(resp)
+                for (const customer of resp) {
+                    $('#order-tbl-body').append(`
+                <tr>
+                <td>${customer.id}</td>
+                <td>${customer.name}</td>
+                <td>${customer.address}</td>
+                <td>${customer.salary}</td>
+                </tr>`);
+                }
+            },
+            error: function () {
+
+            }
+        })
+    }
+
+    $('#btnSave').on('click', function () {
+
+        let customer = {
+            id: $('#txtCusId').val(),
+            name: $('#txtName').val(),
+            address: $('#txtAddress').val(),
+            salary: $('#txtSalary').val()
+        };
+
+        $.ajax({
+            url: 'customer',
+            type: 'post',
+            dataType: 'json',
+            data: JSON.stringify(customer),
+            success:function (resp) {
+                alert('saved !');
+            },
+            error:function (err) {
+                let phr = JSON.parse(err.responseText);
+                alert(phr.message);
+            }
+        });
     });
 </script>
 
