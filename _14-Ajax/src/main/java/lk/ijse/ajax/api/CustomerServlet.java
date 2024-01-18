@@ -104,6 +104,9 @@ public class CustomerServlet extends HttpServlet {
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        System.out.println("delete !");
+        Jsonb jsonb = JsonbBuilder.create();
+        Customer customer = jsonb.fromJson(req.getReader(), Customer.class);
+        System.out.println(customer);
     }
 }

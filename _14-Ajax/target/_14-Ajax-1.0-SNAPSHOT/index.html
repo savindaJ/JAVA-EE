@@ -240,6 +240,32 @@
         });
     });
 
+
+    $('#btnDelete').on('click',function () {
+        let customer = {
+            id: $('#txtCusId').val(),
+            name: $('#txtName').val(),
+            address: $('#txtAddress').val(),
+            salary: $('#txtSalary').val()
+        };
+
+        $.ajax({
+            url: 'customer',
+            type: 'delete',
+            dataType: 'json',
+            data: JSON.stringify(customer),
+            success:function (resp) {
+                alert(resp.message);
+                getAll();
+            },
+            error:function (err) {
+                console.log(err);
+                // let phr = JSON.parse(err.responseText);
+                // alert(phr.message);
+            }
+        });
+    });
+
     getAll();
 </script>
 
