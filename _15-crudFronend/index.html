@@ -225,15 +225,14 @@
         $.ajax({
             url: 'http://localhost:8080/app/customer',
             type: 'post',
-            dataType: 'json',
-            data: data,
+            contentType:'application/json',
+            data: json,
             success: function (resp) {
                 alert(resp.message);
                 getAll();
             },
             error: function (err) {
-                let phr = JSON.parse(err.responseText);
-                alert(phr.message);
+                console.log(err);
             }
         });
     });
@@ -266,10 +265,7 @@
 
     $('#btnDelete').on('click', function () {
         let customer = {
-            id: $('#txtCusId').val(),
-            name: $('#txtName').val(),
-            address: $('#txtAddress').val(),
-            salary: $('#txtSalary').val()
+            id: $('#txtCusId').val()
         };
 
         $.ajax({
@@ -278,7 +274,7 @@
             dataType: 'json',
             data: JSON.stringify(customer),
             success: function (resp) {
-                alert('save !')
+                alert('save !');
                 getAll();
             },
             error: function (jqshr, textStatus, err) {

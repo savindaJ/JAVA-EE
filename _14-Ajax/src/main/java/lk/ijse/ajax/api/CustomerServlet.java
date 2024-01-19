@@ -72,13 +72,13 @@ public class CustomerServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Jsonb jsonb = JsonbBuilder.create();
-//        Customer customer = jsonb.fromJson(req.getReader(), Customer.class);
-        Customer customer = new Customer(
+        Customer customer = jsonb.fromJson(req.getReader(), Customer.class);
+       /* Customer customer = new Customer(
                 req.getParameter("id"),
                 req.getParameter("name"),
                 req.getParameter("address"),
                 Double.parseDouble(req.getParameter("salary"))
-        );
+        );*/
         System.out.println(customer);
 
         try {
@@ -96,6 +96,7 @@ public class CustomerServlet extends HttpServlet {
                 resp.setContentType("application/json");
                 resp.setStatus(HttpServletResponse.SC_CREATED);
                 resp.setHeader("Access-Control-Allow-Origin","*");
+                resp.setHeader("Access-Control-Allow-Headers","Content-Type");
                 resp.getWriter().write(jsonb.toJson(new RespMessage("Successfully saved !","ok")));
             }
         } catch (Exception e) {
@@ -110,7 +111,10 @@ public class CustomerServlet extends HttpServlet {
         Jsonb jsonb = JsonbBuilder.create();
         Customer customer = jsonb.fromJson(req.getReader(), Customer.class);
         System.out.println(customer);
+        resp.setContentType("application/json");
+        resp.setStatus(HttpServletResponse.SC_CREATED);
         resp.setHeader("Access-Control-Allow-Origin","*");
+        resp.getWriter().write(jsonb.toJson(new RespMessage("Successfully saved !","ok")));
     }
 
     @Override
@@ -137,5 +141,11 @@ public class CustomerServlet extends HttpServlet {
             resp.setStatus(HttpServletResponse.SC_EXPECTATION_FAILED);
             throw new RuntimeException(e);
         }
+    }
+
+    @Override
+    protected void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setHeader("Access-Control-Allow-Origin","*");
+        resp.setHeader("Access-Control-Allow-Headers","Content-Type");
     }
 }
