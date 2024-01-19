@@ -111,10 +111,34 @@ public class CustomerServlet extends HttpServlet {
         Jsonb jsonb = JsonbBuilder.create();
         Customer customer = jsonb.fromJson(req.getReader(), Customer.class);
         System.out.println(customer);
-        resp.setContentType("application/json");
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            var root = DriverManager.getConnection
+                    ("jdbc:mysql://localhost:3306/web_test", "root", "80221474");
+            var pstm = root.prepareStatement("UPDATE customer SET name=? , address=? ,salary=? WHERE cus_id=?");
+            pstm.setString(1,customer.getName());
+            pstm.setString(2,customer.getAddress());
+            pstm.setDouble(3,customer.getSalary());
+            pstm.setString(4,customer.getId());
+            var set = pstm.executeUpdate();
+
+            if(set>0){
+                resp.setContentType("application/json");
+                resp.setStatus(HttpServletResponse.SC_CREATED);
+                resp.setHeader("Access-Control-Allow-Origin","*");
+                resp.getWriter().write(jsonb.toJson(new RespMessage("Successfully Updated !","ok")));
+            }
+        } catch (Exception e) {
+            resp.setStatus(HttpServletResponse.SC_EXPECTATION_FAILED);
+            throw new RuntimeException(e);
+        }
+
+
+        /*resp.setContentType("application/json");
         resp.setStatus(HttpServletResponse.SC_CREATED);
         resp.setHeader("Access-Control-Allow-Origin","*");
-        resp.getWriter().write(jsonb.toJson(new RespMessage("Successfully saved !","ok")));
+        resp.getWriter().write(jsonb.toJson(new RespMessage("Successfully saved !","ok")));*/
     }
 
     @Override
@@ -147,5 +171,6 @@ public class CustomerServlet extends HttpServlet {
     protected void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setHeader("Access-Control-Allow-Origin","*");
         resp.setHeader("Access-Control-Allow-Headers","Content-Type");
+        resp.setHeader("Access-Control-Allow-Methods","*");
     }
 }

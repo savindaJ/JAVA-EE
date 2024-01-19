@@ -12,6 +12,8 @@
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_14-Ajax/src/main/java/lk/ijse/ajax/api/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14-Ajax/src/main/java/lk/ijse/ajax/api/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14-Ajax/target/_14-Ajax-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/ajax/api/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14-Ajax/target/_14-Ajax-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/ajax/api/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14-Ajax/target/classes/lk/ijse/ajax/api/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14-Ajax/target/classes/lk/ijse/ajax/api/CustomerServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_15-crudFronend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_15-crudFronend/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -246,7 +248,7 @@
       <workItem from="1704985097110" duration="727000" />
       <workItem from="1705028238164" duration="27455000" />
       <workItem from="1705585124363" duration="5554000" />
-      <workItem from="1705633654038" duration="7664000" />
+      <workItem from="1705633654038" duration="9915000" />
     </task>
     <servers />
   </component>

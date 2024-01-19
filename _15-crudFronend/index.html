@@ -23,7 +23,7 @@
 </head>
 <body>
 <div class="container d-flex overflow-scroll" style="border-radius : 40px ;
-        background: #afaeae; height: 80vh; margin-top: 10vh; border: 5px solid black;padding: 50px">
+        background: #dedbdb; height: 80vh; margin-top: 10vh; border: 5px solid black;padding: 50px">
 
     <form id="customerForm">
         <div class="mb-3">
@@ -248,7 +248,7 @@
         $.ajax({
             url: 'http://localhost:8080/app/customer',
             type: 'put',
-            dataType: 'json',
+            contentType: 'application/json',
             data: JSON.stringify(customer),
             success: function (resp) {
                 alert(resp.message);
@@ -274,7 +274,7 @@
             dataType: 'json',
             data: JSON.stringify(customer),
             success: function (resp) {
-                alert('save !');
+                alert('Successfully Deleted !');
                 getAll();
             },
             error: function (jqshr, textStatus, err) {
