@@ -58,7 +58,10 @@ public class CustomerServlet extends HttpServlet {
                 //  list.add(jsonObjectBuilder.build());
             }
             resp.setContentType("application/json");
-            resp.setStatus(HttpServletResponse.SC_CREATED);
+            resp.setStatus(HttpServletResponse.SC_OK);
+            // resp header !
+            resp.setHeader("Access-Control-Allow-Origin","http://localhost:63342");
+            resp.setHeader("Access-Control-Allow-Origin","*");
             resp.getWriter().println(new Gson().toJson(customers));
         } catch (Exception e) {
             resp.setStatus(HttpServletResponse.SC_EXPECTATION_FAILED);
@@ -69,7 +72,13 @@ public class CustomerServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Jsonb jsonb = JsonbBuilder.create();
-        Customer customer = jsonb.fromJson(req.getReader(), Customer.class);
+//        Customer customer = jsonb.fromJson(req.getReader(), Customer.class);
+        Customer customer = new Customer(
+                req.getParameter("id"),
+                req.getParameter("name"),
+                req.getParameter("address"),
+                Double.parseDouble(req.getParameter("salary"))
+        );
         System.out.println(customer);
 
         try {
@@ -86,6 +95,7 @@ public class CustomerServlet extends HttpServlet {
             if(set>0){
                 resp.setContentType("application/json");
                 resp.setStatus(HttpServletResponse.SC_CREATED);
+                resp.setHeader("Access-Control-Allow-Origin","*");
                 resp.getWriter().write(jsonb.toJson(new RespMessage("Successfully saved !","ok")));
             }
         } catch (Exception e) {
@@ -100,6 +110,7 @@ public class CustomerServlet extends HttpServlet {
         Jsonb jsonb = JsonbBuilder.create();
         Customer customer = jsonb.fromJson(req.getReader(), Customer.class);
         System.out.println(customer);
+        resp.setHeader("Access-Control-Allow-Origin","*");
     }
 
     @Override
@@ -107,6 +118,24 @@ public class CustomerServlet extends HttpServlet {
         System.out.println("delete !");
         Jsonb jsonb = JsonbBuilder.create();
         Customer customer = jsonb.fromJson(req.getReader(), Customer.class);
-        System.out.println(customer);
+        System.out.println("Delete ::"+customer);
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            var root = DriverManager.getConnection
+                    ("jdbc:mysql://localhost:3306/web_test", "root", "80221474");
+            var pstm = root.prepareStatement("DELETE FROM customer WHERE cus_id=?");
+            pstm.setString(1,customer.getId());
+            var set = pstm.executeUpdate();
+
+            if(set>0){
+                resp.setContentType("application/json");
+                resp.setStatus(HttpServletResponse.SC_CREATED);
+                resp.setHeader("Access-Control-Allow-Origin","*");
+                resp.getWriter().write(jsonb.toJson(new RespMessage("Successfully saved !","ok")));
+            }
+        } catch (Exception e) {
+            resp.setStatus(HttpServletResponse.SC_EXPECTATION_FAILED);
+            throw new RuntimeException(e);
+        }
     }
 }
