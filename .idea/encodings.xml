@@ -33,5 +33,7 @@
     <file url="file://$PROJECT_DIR$/_14-Ajax/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/_16-servletFilters/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/_16-servletFilters/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_17-Con-Pool/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_17-Con-Pool/src/main/resources" charset="UTF-8" />
   </component>
 </project>

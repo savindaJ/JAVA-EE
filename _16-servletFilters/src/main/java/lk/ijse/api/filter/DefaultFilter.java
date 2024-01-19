@@ -41,12 +41,19 @@ public class DefaultFilter extends HttpFilter {
 
         System.out.println("Default Filter !");
 
-        // send req to servlet , this method without use a app , req break in this filter !
-        chain.doFilter(req,resp);
+        String origin = req.getHeader("origin");
 
-        resp.setHeader("Access-Control-Allow-Origin","*");
-        resp.setHeader("Access-Control-Allow-Headers","Content-Type");
-        resp.setHeader("Access-Control-Allow-Methods","DELETE,PUT");
-        System.out.println("request out going response !");
+        System.out.println(origin);
+
+        if (origin != null) {
+            // send req to servlet , this method without use a app , req break in this filter !
+            chain.doFilter(req, resp);
+            resp.setHeader("Access-Control-Allow-Origin", origin);
+            resp.setHeader("Access-Control-Allow-Headers", "Content-Type");
+            resp.setHeader("Access-Control-Allow-Methods", "DELETE,PUT");
+            System.out.println("request out going response !");
+        } else {
+            resp.getWriter().write("cors policy violation !");
+        }
     }
 }

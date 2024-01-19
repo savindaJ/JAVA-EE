@@ -14,6 +14,7 @@
         <module name="_05-Hello-Servlet" />
         <module name="_09-Test-Json" />
         <module name="_10-Mapping-Specification" />
+        <module name="_17-Con-Pool" />
         <module name="_07-Servlet-Annotation" />
         <module name="_16-servletFilters" />
         <module name="_04-Web-app-02" />

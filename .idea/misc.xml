@@ -19,14 +19,14 @@
         <option value="$PROJECT_DIR$/_12-Json/pom.xml" />
         <option value="$PROJECT_DIR$/_13-JsonLibraris/pom.xml" />
         <option value="$PROJECT_DIR$/_13-JSON-Libraries/pom.xml" />
-        <option value="$PROJECT_DIR$/_14-Ajax/pom.xml" />
         <option value="$PROJECT_DIR$/_16-servletFilters/pom.xml" />
+        <option value="$PROJECT_DIR$/_14-Ajax/pom.xml" />
+        <option value="$PROJECT_DIR$/_17-Con-Pool/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/_13-JsonLibraris/pom.xml" />
-        <option value="$PROJECT_DIR$/_14-Ajax/_16-Servlet-Filters/pom.xml" />
       </set>
     </option>
   </component>
