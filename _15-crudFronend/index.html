@@ -183,6 +183,7 @@
                 <td>${customer.salary}</td>
                 </tr>`);
                 }
+                setEvent();
             },
             error: function () {
 
@@ -200,7 +201,7 @@
         };
 
         $.ajax({
-            url: 'customer',
+            url: 'http://localhost:8080/app/customer',
             type: 'post',
             dataType: 'json',
             data: JSON.stringify(customer),
@@ -224,7 +225,7 @@
         };
 
         $.ajax({
-            url: 'customer',
+            url: 'http://localhost:8080/app/customer',
             type: 'put',
             dataType: 'json',
             data: JSON.stringify(customer),
@@ -250,7 +251,7 @@
         };
 
         $.ajax({
-            url: 'customer',
+            url: 'http://localhost:8080/app/customer',
             type: 'delete',
             dataType: 'json',
             data: JSON.stringify(customer),
@@ -265,6 +266,22 @@
             }
         });
     });
+
+
+    function setEvent() {
+        $('#order-tbl-body tr').on('click',function () {
+            let $row = $(this);
+            $tds = $row.find("td:nth-child(1)");
+            $ts = $row.find("td:nth-child(2)");
+            $tt = $row.find("td:nth-child(3)");
+            $tf = $row.find("td:nth-child(4)");
+
+            $('#txtCusId').val($tds.text());
+            $('#txtName').val($ts.text());
+            $('#txtAddress').val($tt.text());
+            $('#txtSalary').val($tf.text());
+        });
+    }
 
     getAll();
 </script>
