@@ -14,7 +14,6 @@
         <module name="_05-Hello-Servlet" />
         <module name="_09-Test-Json" />
         <module name="_10-Mapping-Specification" />
-        <module name="_16-Servlet-Filters" />
         <module name="_07-Servlet-Annotation" />
         <module name="_16-servletFilters" />
         <module name="_04-Web-app-02" />
@@ -24,6 +23,7 @@
     <bytecodeTargetLevel>
       <module name="_04-WebApp" target="11" />
       <module name="_13-JsonLibraris" target="11" />
+      <module name="_16-Servlet-Filters" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

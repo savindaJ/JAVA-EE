@@ -24,16 +24,29 @@ import java.io.IOException;
  * @date : 2024-01-19
  * @since : 0.1.0
  **/
-@WebFilter(urlPatterns = "/*")
+//@WebFilter(urlPatterns = "/*")
 public class DefaultFilter extends HttpFilter {
+
+    static {
+        System.out.println("default filter static {}");
+    }
+
+    public DefaultFilter() {
+        System.out.println("default filter constructor !");
+    }
+
     @Override
-    protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
+    protected void doFilter(HttpServletRequest req, HttpServletResponse resp, FilterChain chain) throws IOException, ServletException {
         System.out.println("incoming req !");
 
         System.out.println("Default Filter !");
 
         // send req to servlet , this method without use a app , req break in this filter !
-        chain.doFilter(req,res);
+        chain.doFilter(req,resp);
+
+        resp.setHeader("Access-Control-Allow-Origin","*");
+        resp.setHeader("Access-Control-Allow-Headers","Content-Type");
+        resp.setHeader("Access-Control-Allow-Methods","DELETE,PUT");
         System.out.println("request out going response !");
     }
 }

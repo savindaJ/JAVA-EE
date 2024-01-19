@@ -26,6 +26,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/_13-JsonLibraris/pom.xml" />
+        <option value="$PROJECT_DIR$/_14-Ajax/_16-Servlet-Filters/pom.xml" />
       </set>
     </option>
   </component>

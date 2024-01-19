@@ -25,8 +25,17 @@ import java.io.IOException;
  * @date : 2024-01-19
  * @since : 0.1.0
  **/
-@WebFilter(urlPatterns = "/order")
+//@WebFilter(urlPatterns = "/order")
 public class OrderFilter extends HttpFilter {
+
+    static {
+        System.out.println("order Filter static {}");
+    }
+
+    public OrderFilter() {
+        System.out.println("order filter constructor !");
+    }
+
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
         System.out.println("order Filter !");

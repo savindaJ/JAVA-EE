@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/_14-Ajax/target/_14-Ajax-1.0-SNAPSHOT/WEB-INF/lib/parsson-1.1.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/_14-Ajax/target/_14-Ajax-1.0-SNAPSHOT/WEB-INF/lib/gson-2.8.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/_14-Ajax/target/_14-Ajax-1.0-SNAPSHOT/WEB-INF/lib/jakarta.json.bind-api-3.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/_14-Ajax/target/_14-Ajax-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-3.21.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/_14-Ajax/target/_14-Ajax-1.0-SNAPSHOT/WEB-INF/lib/yasson-3.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/_14-Ajax/target/_14-Ajax-1.0-SNAPSHOT/WEB-INF/lib/jakarta.json-api-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/_14-Ajax/target/_14-Ajax-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-j-8.0.32.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
