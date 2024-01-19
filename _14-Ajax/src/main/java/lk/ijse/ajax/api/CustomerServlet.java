@@ -172,6 +172,6 @@ public class CustomerServlet extends HttpServlet {
     protected void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setHeader("Access-Control-Allow-Origin","*");
         resp.setHeader("Access-Control-Allow-Headers","Content-Type");
-        resp.setHeader("Access-Control-Allow-Methods","DELETE");
+        resp.setHeader("Access-Control-Allow-Methods","DELETE,PUT");
     }
 }
