@@ -10,15 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_14-Ajax/_16-Servlet-Filters/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_17-Con-Pool/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_14-Ajax/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_14-Ajax/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_16-servletFilters/src/main/java/lk/ijse/api/filter/DefaultFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/_16-servletFilters/src/main/java/lk/ijse/api/filter/DefaultFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_16-servletFilters/target/_16-servletFilters-1.0.0/WEB-INF/classes/lk/ijse/api/filter/DefaultFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/_16-servletFilters/target/_16-servletFilters-1.0.0/WEB-INF/classes/lk/ijse/api/filter/DefaultFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_16-servletFilters/target/classes/lk/ijse/api/filter/DefaultFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/_16-servletFilters/target/classes/lk/ijse/api/filter/DefaultFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_17-Con-Pool/src/main/java/lk/ijse/conPool/api/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/_17-Con-Pool/src/main/java/lk/ijse/conPool/api/CustomerServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

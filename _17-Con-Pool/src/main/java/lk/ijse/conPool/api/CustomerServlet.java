@@ -48,7 +48,7 @@ public class CustomerServlet extends HttpServlet {
         DataSource ds = (DataSource)initContext.lookup("java:/comp/env/jdbc/mydb");*/
 
         ServletContext context = getServletContext();
-        Connection connection = (Connection) context.getAttribute("connection");
-        System.out.println(connection);
+        Connection connection = (Connection) context.getAttribute("connection"); //return to mysql connection
+        System.out.println("Customer servlet connection created :: "+connection);
     }
 }
