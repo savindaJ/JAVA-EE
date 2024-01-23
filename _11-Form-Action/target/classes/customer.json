@@ -1,0 +1,10 @@
+{
+  "id": "C001",
+  "name": "savinda",
+  "address": "Matara",
+  "salary": 125000,
+  "mobiles": [
+    "0098765434",
+    "0986423679"
+  ]
+}

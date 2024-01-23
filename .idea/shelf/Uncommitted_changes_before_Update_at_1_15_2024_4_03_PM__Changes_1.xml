@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_Update_at_1_15_2024_4_03_PM_[Changes]1" date="1705314804140" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_15_2024_4_03_PM_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 1/15/2024 4:03 PM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="_11-Form-Action/target/classes/lk/ijse/formAction.class" />
+    <option name="AFTER_PATH" value="_11-Form-Action/target/classes/lk/ijse/formAction.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_15_2024_4_03_PM_[Changes]1/formAction.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="_13-JSON-Libraries/target/classes/lk/ijse/jsonLib/TestJson.class" />
+    <option name="AFTER_PATH" value="_13-JSON-Libraries/target/classes/lk/ijse/jsonLib/TestJson.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_15_2024_4_03_PM_[Changes]1/TestJson.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="_08-web-app-03/target/classes/lk/ijse/webapp03/Test.class" />
+    <option name="AFTER_PATH" value="_08-web-app-03/target/classes/lk/ijse/webapp03/Test.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_15_2024_4_03_PM_[Changes]1/Test.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="_09-Test-Json/target/classes/lk/ijse/testJson/CustomerServlet.class" />
+    <option name="AFTER_PATH" value="_09-Test-Json/target/classes/lk/ijse/testJson/CustomerServlet.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_15_2024_4_03_PM_[Changes]1/CustomerServlet.class" />
+  </binary>
+</changelist>

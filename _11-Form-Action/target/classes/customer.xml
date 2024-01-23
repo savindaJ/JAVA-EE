@@ -1,0 +1,40 @@
+<!--
+  ~ Copyright (c) 2024.
+  ~ All Rights Reserved
+  ~  * You may use, distribute and modify this code under the
+  ~  * terms of the XYZ license, which unfortunately won't be
+  ~  * written for another century.
+  ~  *
+  ~  * You should have received a copy of the XYZ license with
+  ~  * this file. If not, please write to: , or visit :
+  -->
+
+<customers>
+    <customer>
+        <id>C001</id>
+        <name>Savinda</name>
+        <address>Matara</address>
+        <salary>125000</salary>
+    </customer>
+
+    <customer>
+        <id>C002</id>
+        <name>Kamal</name>
+        <address>Galle</address>
+        <salary>135000</salary>
+    </customer>
+
+    <customer>
+        <id>C003</id>
+        <name>Sepala</name>
+        <address>Kandy</address>
+        <salary>145000</salary>
+    </customer>
+
+    <customer>
+        <id>C004</id>
+        <name>Tejan</name>
+        <address>Jaffna</address>
+        <salary>132000</salary>
+    </customer>
+</customers>

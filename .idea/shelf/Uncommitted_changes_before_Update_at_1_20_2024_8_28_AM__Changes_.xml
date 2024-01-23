@@ -1,0 +1,44 @@
+<changelist name="Uncommitted_changes_before_Update_at_1_20_2024_8_28_AM_[Changes]" date="1705719487049" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_20_2024_8_28_AM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 1/20/2024 8:28 AM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="_11-Form-Action/target/classes/lk/ijse/formAction.class" />
+    <option name="AFTER_PATH" value="_11-Form-Action/target/classes/lk/ijse/formAction.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_20_2024_8_28_AM_[Changes]/formAction.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/dataSources/a339040c-498c-4101-bee9-6c8dba4fdc9a/storage_v2/_src_/schema/mysql.osA4Bg.meta" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="_08-web-app-03/target/classes/lk/ijse/webapp03/Test.class" />
+    <option name="AFTER_PATH" value="_08-web-app-03/target/classes/lk/ijse/webapp03/Test.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_20_2024_8_28_AM_[Changes]/Test.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/dataSources/a339040c-498c-4101-bee9-6c8dba4fdc9a/storage_v2/_src_/schema/sys.zb4BAA.meta" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/dataSources/a339040c-498c-4101-bee9-6c8dba4fdc9a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/dataSources/a339040c-498c-4101-bee9-6c8dba4fdc9a/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/dataSources/a339040c-498c-4101-bee9-6c8dba4fdc9a/storage_v2/_src_/schema/web_test.nSYt1Q.meta" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="_09-Test-Json/target/classes/lk/ijse/testJson/CustomerServlet.class" />
+    <option name="AFTER_PATH" value="_09-Test-Json/target/classes/lk/ijse/testJson/CustomerServlet.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_20_2024_8_28_AM_[Changes]/CustomerServlet.class" />
+  </binary>
+</changelist>
