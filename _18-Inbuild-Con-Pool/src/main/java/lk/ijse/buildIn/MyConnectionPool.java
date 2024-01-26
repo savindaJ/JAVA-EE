@@ -11,6 +11,7 @@
 
 package lk.ijse.buildIn;
 
+import jakarta.annotation.Resource;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -28,11 +29,12 @@ import java.io.IOException;
 @WebServlet(urlPatterns = "/my")
 public class MyConnectionPool extends HttpServlet {
 
+    @Resource(name = "java:comp/env/jdbc/web_test")
     DataSource dataSource;
 
     @Override
     public void init() throws ServletException {
-        dataSource = (DataSource) getServletContext().getAttribute("pool");
+//        dataSource = (DataSource) getServletContext().getAttribute("pool");
         System.out.println("Init DataSource ::-> "+dataSource);
     }
 
