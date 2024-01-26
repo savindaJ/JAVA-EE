@@ -17,6 +17,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+import javax.sql.DataSource;
 import java.io.IOException;
 
 /**
@@ -26,6 +27,15 @@ import java.io.IOException;
  **/
 @WebServlet(urlPatterns = "/my")
 public class MyConnectionPool extends HttpServlet {
+
+    DataSource dataSource;
+
+    @Override
+    public void init() throws ServletException {
+        dataSource = (DataSource) getServletContext().getAttribute("pool");
+        System.out.println("Init DataSource ::-> "+dataSource);
+    }
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("get !");
