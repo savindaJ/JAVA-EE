@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="_17-Con-Pool:war exploded" />
+      <artifact name="_18-Inbuild-Con-Pool:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
