@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/_18-Inbuild-Con-Pool/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_18-Inbuild-Con-Pool/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_18-Inbuild-Con-Pool/src/main/java/lk/ijse/buildIn/MyConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/_18-Inbuild-Con-Pool/src/main/java/lk/ijse/buildIn/MyConnectionPool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

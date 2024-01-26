@@ -20,13 +20,14 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import javax.sql.DataSource;
 import java.io.IOException;
+import java.sql.SQLException;
 
 /**
  * @author : savindaJ
  * @date : 2024-01-26
  * @since : 0.1.0
  **/
-@WebServlet(urlPatterns = "/my")
+@WebServlet(urlPatterns = "/my" ,loadOnStartup = 1)
 public class MyConnectionPool extends HttpServlet {
 
     @Resource(name = "java:comp/env/jdbc/web_test")
@@ -35,7 +36,11 @@ public class MyConnectionPool extends HttpServlet {
     @Override
     public void init() throws ServletException {
 //        dataSource = (DataSource) getServletContext().getAttribute("pool");
-        System.out.println("Init DataSource ::-> "+dataSource);
+        try {
+            System.out.println("Init DataSource ::-> "+dataSource.getConnection());
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override

@@ -11,6 +11,7 @@
 
 package lk.ijse.buildIn;
 
+import jakarta.annotation.Resource;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
@@ -29,21 +30,20 @@ import java.sql.Connection;
  **/
 @WebListener
 public class MyListener implements ServletContextListener {
+
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         System.out.println("when app deployed !");
-
-//        ServletContext context = sce.getServletContext();
-//
-//        try {
-//            Context initCtx = new InitialContext();
-//            DataSource envCtx = (DataSource) initCtx.lookup("java:comp/env/jdbc/web_test");
-//            System.out.println("Created context Connection ::-> "+envCtx.getConnection());
-//            context.setAttribute("pool",envCtx);
-//        } catch (Exception e) {
-//            System.out.println(e.getMessage());
-//        }
-
+        //        ServletContext context = sce.getServletContext();
+        //
+        //        try {
+        //            Context initCtx = new InitialContext();
+        //            DataSource envCtx = (DataSource) initCtx.lookup("java:comp/env/jdbc/web_test");
+        //            System.out.println("Created context Connection ::-> "+envCtx.getConnection());
+        //            context.setAttribute("pool",envCtx);
+        //        } catch (Exception e) {
+        //            System.out.println(e.getMessage());
+        //        }
     }
 
     @Override
