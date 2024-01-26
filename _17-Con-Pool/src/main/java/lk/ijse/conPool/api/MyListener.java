@@ -41,8 +41,8 @@ public class MyListener implements ServletContextListener {
         dbpc.setUrl("jdbc:mysql://localhost:3306/web_test");
         dbpc.setPassword("80221474");
         dbpc.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dbpc.setInitialSize(10);
-        dbpc.setMaxTotal(20);
+        dbpc.setInitialSize(2);
+        dbpc.setMaxTotal(5);
         try {
             Connection connection = dbpc.getConnection();
             System.out.println("my pool"+connection);

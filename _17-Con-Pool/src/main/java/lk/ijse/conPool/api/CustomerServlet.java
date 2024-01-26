@@ -20,6 +20,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.SQLException;
 
 /**
  * @author : savindaJ
@@ -48,7 +49,17 @@ public class CustomerServlet extends HttpServlet {
         DataSource ds = (DataSource)initContext.lookup("java:/comp/env/jdbc/mydb");*/
 
         ServletContext context = getServletContext();
-        Connection connection = (Connection) context.getAttribute("connection"); //return to mysql connection
-        System.out.println("Customer servlet connection created :: "+connection);
+         //return to mysql connection
+
+        // try with resource !!!  release a connection in pool
+        try(Connection connection = (Connection) context.getAttribute("connection")){
+
+            System.out.println("Customer servlet connection created :: "+connection);
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+
     }
 }
