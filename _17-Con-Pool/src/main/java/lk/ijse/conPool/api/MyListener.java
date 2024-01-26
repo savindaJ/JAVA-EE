@@ -17,6 +17,7 @@ import jakarta.servlet.ServletContextListener;
 import jakarta.servlet.annotation.WebListener;
 import org.apache.commons.dbcp2.BasicDataSource;
 
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -29,6 +30,17 @@ import java.sql.SQLException;
 public class MyListener implements ServletContextListener {
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
+        ServletContext context = sce.getServletContext();
+        BasicDataSource dbcp = (BasicDataSource) context.getAttribute("dbcp");
+        try {
+            /**when app destroyed
+             * or run deployed
+             * close a connection pool*/
+
+            dbcp.close();
+        } catch (SQLException e) {
+            System.out.println(e.getLocalizedMessage());
+        }
         System.out.println("when app closed !");
     }
 
