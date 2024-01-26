@@ -9,11 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_17-Con-Pool/target/_17-Con-Pool-1.0.0/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/_17-Con-Pool/target/_17-Con-Pool-1.0.0/META-INF/MANIFEST.MF" afterDir="false" />
-    </list>
+    <list default="true" id="3a991dd9-7478-4fce-be81-47a3c5afcfb1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +111,7 @@
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="_17-Con-Pool:war exploded">
+        <artifact name="_18-Inbuild-Con-Pool:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/app" />
           </settings>
@@ -195,7 +191,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="_17-Con-Pool:war exploded" />
+          <artifact name="_18-Inbuild-Con-Pool:war exploded" />
         </option>
       </method>
     </configuration>
